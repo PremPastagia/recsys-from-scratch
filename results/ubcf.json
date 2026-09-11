@@ -1,0 +1,26 @@
+{
+  "selection": {
+    "ranking_selected": {
+      "family": "ubcf",
+      "k": 80,
+      "similarity": "cosine",
+      "mean_center": false,
+      "min_support": 3,
+      "beta": 25.0,
+      "rank_mode": "score"
+    },
+    "rating_selected": {
+      "family": "ubcf",
+      "k": 50,
+      "similarity": "pearson",
+      "mean_center": true,
+      "min_support": 3,
+      "beta": 25.0,
+      "rank_mode": "rating"
+    },
+    "val_ndcg_at_selection": 0.18131690790450677,
+    "val_rmse_at_selection": 0.9358369129676488,
+    "selection_split": "validation"
+  },
+  "n_configs": 108
+}

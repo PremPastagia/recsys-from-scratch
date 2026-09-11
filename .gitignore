@@ -1,0 +1,24 @@
+# --- Dataset -----------------------------------------------------------------
+# MovieLens' licence forbids redistribution ("the user may not redistribute the
+# data without separate permission"), so the data is fetched, not committed.
+#   python download_data.py
+data/
+
+# --- Large regenerable artifacts ---------------------------------------------
+# Pickled fitted models and saved Top-K lists (~240 MB), written by stage 16.
+# The app refits from the stored specs when this is absent.
+results/artifacts/
+
+# --- Python ------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# --- Editors / OS ------------------------------------------------------------
+.ipynb_checkpoints/
+.DS_Store
+.idea/
+.vscode/

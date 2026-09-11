@@ -1,0 +1,395 @@
+{
+  "table": [
+    {
+      "model": "Random",
+      "mean_train_popularity": 38.37274655355249,
+      "median_train_popularity": 17.0,
+      "mean_pop_rank": 0.5151908013144223,
+      "head_pct": 5.630965005302227,
+      "medium_pct": 14.0084835630965,
+      "long_tail_pct": 80.36055143160127,
+      "catalog_coverage": 0.9946492271105827,
+      "n_distinct_items": 1673,
+      "novelty_bits": 5.825823181788103,
+      "ild": 0.7652744681471785,
+      "gini_exposure": 0.2354379160293696,
+      "ndcg_mean": 0.0079113848679688,
+      "rmse": 1.1203114293608811,
+      "recall_mean": 0.0058586289595202,
+      "map_mean": 0.0025483381511129
+    },
+    {
+      "model": "GlobalMean",
+      "mean_train_popularity": 13.741039236479322,
+      "median_train_popularity": 11.0,
+      "mean_pop_rank": 0.6294676387521189,
+      "head_pct": 0.0,
+      "medium_pct": 0.04241781548250265,
+      "long_tail_pct": 99.9575821845175,
+      "catalog_coverage": 0.11117717003567182,
+      "n_distinct_items": 187,
+      "novelty_bits": 6.648970134393878,
+      "ild": 0.7799893526693483,
+      "gini_exposure": 0.9898067366653089,
+      "ndcg_mean": 0.0014968946906207,
+      "rmse": 1.1203114293608811,
+      "recall_mean": 0.0005896097849773,
+      "map_mean": 0.0004861111111111
+    },
+    {
+      "model": "UserMean",
+      "mean_train_popularity": 13.741039236479322,
+      "median_train_popularity": 11.0,
+      "mean_pop_rank": 0.6294676387521189,
+      "head_pct": 0.0,
+      "medium_pct": 0.04241781548250265,
+      "long_tail_pct": 99.9575821845175,
+      "catalog_coverage": 0.11117717003567182,
+      "n_distinct_items": 187,
+      "novelty_bits": 6.648970134393878,
+      "ild": 0.7799893526693483,
+      "gini_exposure": 0.9898067366653089,
+      "ndcg_mean": 0.0014968946906207,
+      "rmse": 1.0411582606632497,
+      "recall_mean": 0.0005896097849773,
+      "map_mean": 0.0004861111111111
+    },
+    {
+      "model": "ItemMean",
+      "mean_train_popularity": 1.3328738069989396,
+      "median_train_popularity": 1.0,
+      "mean_pop_rank": 0.902684989682579,
+      "head_pct": 0.0,
+      "medium_pct": 0.0,
+      "long_tail_pct": 100.0,
+      "catalog_coverage": 0.007134363852556481,
+      "n_distinct_items": 12,
+      "novelty_bits": 8.702123814088548,
+      "ild": 0.7020366716306323,
+      "gini_exposure": 0.9929494882499876,
+      "ndcg_mean": 0.0002686533043598,
+      "rmse": 1.023141577839777,
+      "recall_mean": 0.0002467001389415,
+      "map_mean": 5.918171866447729e-05
+    },
+    {
+      "model": "BiasBaseline",
+      "mean_train_popularity": 167.6441145281018,
+      "median_train_popularity": 150.0,
+      "mean_pop_rank": 0.07642852591782778,
+      "head_pct": 59.33191940615058,
+      "medium_pct": 40.29692470837752,
+      "long_tail_pct": 0.3711558854718982,
+      "catalog_coverage": 0.018430439952437573,
+      "n_distinct_items": 31,
+      "novelty_bits": 2.6427982519540145,
+      "ild": 0.7340373876240507,
+      "gini_exposure": 0.9924684419774974,
+      "ndcg_mean": 0.0703536484036369,
+      "rmse": 0.9437945814220744,
+      "recall_mean": 0.0490441718627088,
+      "map_mean": 0.0279942566406351
+    },
+    {
+      "model": "Popularity",
+      "mean_train_popularity": 321.0539766702015,
+      "median_train_popularity": 307.0,
+      "mean_pop_rank": 0.004845244996949879,
+      "head_pct": 100.0,
+      "medium_pct": 0.0,
+      "long_tail_pct": 0.0,
+      "catalog_coverage": 0.023781212841854936,
+      "n_distinct_items": 40,
+      "novelty_bits": 1.565014305991333,
+      "ild": 0.76187375109653,
+      "gini_exposure": 0.9900063424973804,
+      "ndcg_mean": 0.1534973297490409,
+      "rmse": 1.023141577839777,
+      "recall_mean": 0.1243557911368814,
+      "map_mean": 0.0742998484415317
+    },
+    {
+      "model": "PopularityPositive",
+      "mean_train_popularity": 301.33297985153763,
+      "median_train_popularity": 287.0,
+      "mean_pop_rank": 0.007321110559474837,
+      "head_pct": 100.0,
+      "medium_pct": 0.0,
+      "long_tail_pct": 0.0,
+      "catalog_coverage": 0.02318668252080856,
+      "n_distinct_items": 39,
+      "novelty_bits": 1.6662693217555264,
+      "ild": 0.6891631872463613,
+      "gini_exposure": 0.9902707603305159,
+      "ndcg_mean": 0.1536446552215945,
+      "rmse": 1.023141577839777,
+      "recall_mean": 0.1129379059443441,
+      "map_mean": 0.0759339170394371
+    },
+    {
+      "model": "UBCF",
+      "mean_train_popularity": 244.384835630965,
+      "median_train_popularity": 232.0,
+      "mean_pop_rank": 0.024939770360898394,
+      "head_pct": 91.9406150583245,
+      "medium_pct": 8.059384941675503,
+      "long_tail_pct": 0.0,
+      "catalog_coverage": 0.0802615933412604,
+      "n_distinct_items": 135,
+      "novelty_bits": 2.020288511807743,
+      "ild": 0.6996123226876502,
+      "gini_exposure": 0.9704073951249774,
+      "ndcg_mean": 0.2569637339644862,
+      "rmse": 1.0150561516815186,
+      "recall_mean": 0.2224919129026524,
+      "map_mean": 0.1435958707597023
+    },
+    {
+      "model": "UBCF-rating",
+      "mean_train_popularity": 2.3112407211028634,
+      "median_train_popularity": 1.0,
+      "mean_pop_rank": 0.8687235480067601,
+      "head_pct": 0.03181336161187699,
+      "medium_pct": 0.0,
+      "long_tail_pct": 99.96818663838812,
+      "catalog_coverage": 0.1605231866825208,
+      "n_distinct_items": 270,
+      "novelty_bits": 8.396594911563051,
+      "ild": 0.7290703251364532,
+      "gini_exposure": 0.9612424233635914,
+      "ndcg_mean": 0.0002166583563104,
+      "rmse": 0.946788149752151,
+      "recall_mean": 0.0001953865100416,
+      "map_mean": 6.208949096880131e-05
+    },
+    {
+      "model": "IBCF",
+      "mean_train_popularity": 242.498197242842,
+      "median_train_popularity": 232.0,
+      "mean_pop_rank": 0.024160175828279763,
+      "head_pct": 93.66914103923648,
+      "medium_pct": 6.193001060445387,
+      "long_tail_pct": 0.1378579003181336,
+      "catalog_coverage": 0.11296076099881094,
+      "n_distinct_items": 190,
+      "novelty_bits": 2.0234467876342324,
+      "ild": 0.7231243320599123,
+      "gini_exposure": 0.9652199131720935,
+      "ndcg_mean": 0.259267014509181,
+      "rmse": 0.9402175956605314,
+      "recall_mean": 0.2180645002186249,
+      "map_mean": 0.1496311278043305
+    },
+    {
+      "model": "IBCF-rating",
+      "mean_train_popularity": 7.42237539766702,
+      "median_train_popularity": 1.0,
+      "mean_pop_rank": 0.8271350374057759,
+      "head_pct": 1.3149522799575823,
+      "medium_pct": 1.76033934252386,
+      "long_tail_pct": 96.92470837751856,
+      "catalog_coverage": 0.17717003567181927,
+      "n_distinct_items": 298,
+      "novelty_bits": 8.102763496741918,
+      "ild": 0.7032706290382923,
+      "gini_exposure": 0.9762967128714868,
+      "ndcg_mean": 0.0023216441973858,
+      "rmse": 0.9286790972660172,
+      "recall_mean": 0.0016981413380253,
+      "map_mean": 0.0006499726327312
+    },
+    {
+      "model": "RegressionCF",
+      "mean_train_popularity": 195.550901378579,
+      "median_train_popularity": 181.0,
+      "mean_pop_rank": 0.05693878877076022,
+      "head_pct": 74.65535524920467,
+      "medium_pct": 21.060445387062565,
+      "long_tail_pct": 4.2841993637327676,
+      "catalog_coverage": 0.21938168846611178,
+      "n_distinct_items": 369,
+      "novelty_bits": 2.408497723837805,
+      "ild": 0.6929488109167184,
+      "gini_exposure": 0.9373097723636079,
+      "ndcg_mean": 0.2289736995921417,
+      "rmse": 0.9407811242103048,
+      "recall_mean": 0.1788172689460187,
+      "map_mean": 0.1275302667263425
+    },
+    {
+      "model": "RegressionCF-rating",
+      "mean_train_popularity": 168.1409331919406,
+      "median_train_popularity": 156.0,
+      "mean_pop_rank": 0.07592057194658282,
+      "head_pct": 59.692470837751856,
+      "medium_pct": 38.31389183457052,
+      "long_tail_pct": 1.9936373276776245,
+      "catalog_coverage": 0.0850178359096314,
+      "n_distinct_items": 143,
+      "novelty_bits": 2.637293497264029,
+      "ild": 0.7372475104059156,
+      "gini_exposure": 0.9861275838111221,
+      "ndcg_mean": 0.1039290980071825,
+      "rmse": 0.919115895408422,
+      "recall_mean": 0.0604686806478759,
+      "map_mean": 0.0491919661183438
+    },
+    {
+      "model": "SLIM",
+      "mean_train_popularity": 211.84591728525982,
+      "median_train_popularity": 202.0,
+      "mean_pop_rank": 0.04663928391863905,
+      "head_pct": 76.17179215270413,
+      "medium_pct": 22.152704135737007,
+      "long_tail_pct": 1.6755037115588547,
+      "catalog_coverage": 0.20630202140309156,
+      "n_distinct_items": 347,
+      "novelty_bits": 2.282741867945627,
+      "ild": 0.7067266069828245,
+      "gini_exposure": 0.9305720983074484,
+      "ndcg_mean": 0.2949581315431235,
+      "rmse": 1.0331168197746226,
+      "recall_mean": 0.2449703763487404,
+      "map_mean": 0.1729064112374675
+    },
+    {
+      "model": "GraphRec",
+      "mean_train_popularity": 275.3707317073171,
+      "median_train_popularity": 275.0,
+      "mean_pop_rank": 0.017482019426148274,
+      "head_pct": 93.93425238600213,
+      "medium_pct": 5.853658536585367,
+      "long_tail_pct": 0.2120890774125133,
+      "catalog_coverage": 0.07966706302021404,
+      "n_distinct_items": 134,
+      "novelty_bits": 1.8402544216491785,
+      "ild": 0.7103905828533743,
+      "gini_exposure": 0.9789629575456174,
+      "ndcg_mean": 0.2545763826111706,
+      "rmse": 1.0724670329532704,
+      "recall_mean": 0.2131355050438399,
+      "map_mean": 0.1432441494318033
+    }
+  ],
+  "correlations_paradigms": {
+    "n_models": 5,
+    "models": [
+      "UBCF",
+      "IBCF",
+      "RegressionCF",
+      "SLIM",
+      "GraphRec"
+    ],
+    "ndcg_vs_mean_popularity": 0.05329280262727791,
+    "ndcg_vs_head_pct": -0.06286399093480036,
+    "ndcg_vs_long_tail_pct": -0.40204423119346633,
+    "ndcg_vs_catalog_coverage": 0.059378927647556236,
+    "ndcg_vs_novelty": -0.06518235545367623,
+    "ndcg_vs_ild": 0.3866453092568849,
+    "coverage_vs_novelty": 0.9517277089019575
+  },
+  "correlations_ranking_capable": {
+    "n_models": 8,
+    "models": [
+      "BiasBaseline",
+      "Popularity",
+      "PopularityPositive",
+      "UBCF",
+      "IBCF",
+      "RegressionCF",
+      "SLIM",
+      "GraphRec"
+    ],
+    "ndcg_vs_mean_popularity": 0.027860037493003722,
+    "ndcg_vs_head_pct": 0.27303460500751586,
+    "ndcg_vs_long_tail_pct": 0.24464212799925078,
+    "ndcg_vs_catalog_coverage": 0.7109485174455106,
+    "ndcg_vs_novelty": -0.0977308921654491,
+    "ndcg_vs_ild": -0.42904995317195777,
+    "coverage_vs_novelty": 0.435640727916352
+  },
+  "correlation_caveat": "With n = 5 a correlation coefficient is a description of five points, not evidence. The exposure percentages and the Pareto analysis below are the load-bearing results; the correlations are reported for completeness. Correlations computed over the full model list are excluded deliberately: the rating-tuned arms rank close to randomly (NDCG@10 as low as 0.0002) while covering 99.5% of the catalogue, and including them manufactures a strong apparent accuracy/coverage trade-off that is really just 'a broken ranker touches many items'.",
+  "exposure_reference": {
+    "n_head_items": 116,
+    "head_share_of_catalog_pct": 6.896551724137931,
+    "n_long_tail_items": 1325,
+    "long_tail_share_of_catalog_pct": 78.77526753864447,
+    "paradigm_head_pct_range": [
+      74.65535524920467,
+      93.93425238600213
+    ],
+    "paradigm_tail_pct_range": [
+      0.0,
+      4.2841993637327676
+    ],
+    "paradigm_coverage_range": [
+      0.07966706302021404,
+      0.21938168846611178
+    ]
+  },
+  "pareto": {
+    "objectives": [
+      "ndcg_mean",
+      "catalog_coverage",
+      "novelty_bits",
+      "long_tail_pct"
+    ],
+    "dominated": {
+      "UBCF": [
+        "IBCF",
+        "SLIM"
+      ],
+      "IBCF": [
+        "SLIM"
+      ],
+      "GraphRec": [
+        "SLIM"
+      ]
+    },
+    "pareto_front": [
+      "RegressionCF",
+      "SLIM"
+    ]
+  },
+  "headline": {
+    "most_accurate_model_ndcg": "SLIM",
+    "most_long_tail_model": "RegressionCF",
+    "highest_coverage_model": "RegressionCF",
+    "most_accurate_head_pct": 76.17179215270413,
+    "most_accurate_long_tail_pct": 1.6755037115588547,
+    "most_accurate_coverage": 0.20630202140309156,
+    "most_accurate_novelty": 2.282741867945627
+  },
+  "does_the_most_accurate_model_make_the_most_useful_recommendations": {
+    "answer": "Not straightforwardly -- but the interesting part is that the trade-off is not where the textbook expects it.",
+    "evidence": {
+      "most_accurate_model": "SLIM",
+      "its_ndcg": 0.2289736995921417,
+      "its_catalog_coverage": 0.20630202140309156,
+      "its_long_tail_pct": 4.2841993637327676,
+      "its_head_pct": 76.17179215270413,
+      "its_novelty_bits": 2.408497723837805,
+      "pareto_front": [
+        "RegressionCF",
+        "SLIM"
+      ],
+      "dominated_models": {
+        "UBCF": [
+          "IBCF",
+          "SLIM"
+        ],
+        "IBCF": [
+          "SLIM"
+        ],
+        "GraphRec": [
+          "SLIM"
+        ]
+      },
+      "widest_coverage_model": "RegressionCF",
+      "its_coverage": 0.21938168846611178,
+      "coverage_gain_pp": 1.3079667063020217,
+      "tail_gain_pp": 2.608695652173913,
+      "ndcg_cost_relative_pct": 22.370779068125046
+    }
+  }
+}

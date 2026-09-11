@@ -1,0 +1,110 @@
+{
+  "final_spec": {
+    "family": "slim",
+    "l1": 0.5,
+    "l2": 50.0,
+    "threshold": 4.0,
+    "max_iter": 1500
+  },
+  "ranking_selected": {
+    "family": "slim",
+    "l1": 0.5,
+    "l2": 50.0,
+    "threshold": 4.0,
+    "max_iter": 1500,
+    "rank_mode": "score"
+  },
+  "rating_selected": {
+    "family": "slim",
+    "l1": 0.5,
+    "l2": 50.0,
+    "threshold": 4.0,
+    "max_iter": 1500,
+    "rank_mode": "score"
+  },
+  "sparsity": {
+    "nnz": 171388,
+    "offdiag_cells": 2827442,
+    "sparsity_pct": 93.93840793197526,
+    "density_pct": 6.061592068024738,
+    "mean_nnz_per_column": 101.89536266349585,
+    "median_nnz_per_column": 101.0,
+    "max_nnz_per_column": 288,
+    "empty_columns": 293
+  },
+  "solver": {
+    "iterations": 175,
+    "lipschitz": 6426.059662582817,
+    "step": 0.00015561635784720857,
+    "objective": 13463.930093141284,
+    "solve_time_s": 29.61681450001197,
+    "kkt_relative_violation": 9.667485354940896e-05,
+    "converged": true
+  },
+  "kkt": {
+    "max_violation_active": 0.034996296984886044,
+    "max_violation_inactive": 0.003424842566635,
+    "max_violation": 0.034996296984886044,
+    "relative_violation": 9.667485354940896e-05,
+    "gram_scale": 362.0
+  },
+  "coefficient_stats": {
+    "n_nonzero": 171388,
+    "mean": 0.008024417055687521,
+    "median": 0.004571028822201836,
+    "std": 0.009889038819098769,
+    "max": 0.20664347353911627,
+    "p99": 0.046704455996218495,
+    "min_nonzero": 4.928460824169044e-09
+  },
+  "implicit_conversion": {
+    "rule": "X[u,i] = 1 iff r_ui >= tau, computed on TRAIN ratings only",
+    "selected_tau": 4.0,
+    "justification": "MovieLens is an explicit 1-5 dataset, but SLIM models item co-occurrence in *consumption* data, so the ratings must be reduced to a binary 'this user endorsed this item' signal. tau is not assumed: it is swept. tau=1 keeps every rating and therefore treats a 1-star review as an endorsement, which injects negative evidence as if it were positive. tau=5 is too strict and starves most items of support. The sweep in slim_sweep.csv (tag='threshold') reports NDCG@10, sparsity and catalogue coverage at every tau on the validation split, and the value recorded here is the measured argmax.",
+    "sweep": [
+      {
+        "tau": 1.0,
+        "positives": 70771,
+        "ndcg": 0.18694799472619722,
+        "coverage": 0.2348394768133175
+      },
+      {
+        "tau": 2.0,
+        "positives": 66408,
+        "ndcg": 0.19709609903750208,
+        "coverage": 0.2294887039239001
+      },
+      {
+        "tau": 3.0,
+        "positives": 58412,
+        "ndcg": 0.20581919269552726,
+        "coverage": 0.21997621878715815
+      },
+      {
+        "tau": 4.0,
+        "positives": 39239,
+        "ndcg": 0.20809537428823,
+        "coverage": 0.20630202140309156
+      },
+      {
+        "tau": 5.0,
+        "positives": 15059,
+        "ndcg": 0.1552060291556385,
+        "coverage": 0.23305588585017836
+      }
+    ]
+  },
+  "best_regularisation": {
+    "l1": 0.5,
+    "l2": 50.0,
+    "l1_ratio": 0.009900990099009901,
+    "val_ndcg": 0.20809537428823
+  },
+  "accuracy_sparsity_tradeoff": {
+    "corr_sparsity_ndcg": -0.540735014018688,
+    "corr_sparsity_fit_time": 0.3906421238031241,
+    "corr_sparsity_coverage": -0.3623208750827727
+  },
+  "selection_split": "validation",
+  "rating_head_note": "SLIM is an implicit-feedback ranker. Its score -> rating map is a two-parameter least-squares calibration fitted on the VALIDATION split, because fitting it on training pairs estimates the line in a regime the model never sees at inference time. Consequently the validation RMSE reported in the sweep is in-sample for those two parameters (with 2 parameters on ~9.6k points the optimism is negligible, but it is stated for completeness); the TEST RMSE in Part H is out-of-sample. No selection anywhere in this project uses SLIM's RMSE."
+}

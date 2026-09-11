@@ -1,0 +1,788 @@
+{
+  "master_table": [
+    {
+      "Model": "Random",
+      "RMSE": 1.1203114293608811,
+      "MAE": 0.9404231183786108,
+      "P@10": 0.0072198275862068,
+      "R@10": 0.0058586289595202,
+      "HR@10": 0.0700431034482758,
+      "NDCG@10": 0.0079113848679688,
+      "MAP@10": 0.0025483381511129,
+      "Coverage": 0.9946492271105828,
+      "UserCov": 1.0,
+      "Novelty": 5.825823181788103,
+      "Diversity": 0.7652744681471785,
+      "LongTail": 0.8036055143160127,
+      "Head": 0.0563096500530222,
+      "TrainS": 0.0060533340001711,
+      "PredictS": 0.0010672500002328,
+      "ModelMB": 12.689008,
+      "SparsityPct": NaN
+    },
+    {
+      "Model": "GlobalMean",
+      "RMSE": 1.1203114293608811,
+      "MAE": 0.9404231183786108,
+      "P@10": 0.0014008620689655,
+      "R@10": 0.0005896097849773,
+      "HR@10": 0.0129310344827586,
+      "NDCG@10": 0.0014968946906207,
+      "MAP@10": 0.0004861111111111,
+      "Coverage": 0.1111771700356718,
+      "UserCov": 0.0,
+      "Novelty": 6.648970134393878,
+      "Diversity": 0.7799893526693483,
+      "LongTail": 0.999575821845175,
+      "Head": 0.0,
+      "TrainS": 6.954199989195331e-05,
+      "PredictS": 0.0017942920003406,
+      "ModelMB": 8e-06,
+      "SparsityPct": NaN
+    },
+    {
+      "Model": "UserMean",
+      "RMSE": 1.0411582606632497,
+      "MAE": 0.8338520184678408,
+      "P@10": 0.0014008620689655,
+      "R@10": 0.0005896097849773,
+      "HR@10": 0.0129310344827586,
+      "NDCG@10": 0.0014968946906207,
+      "MAP@10": 0.0004861111111111,
+      "Coverage": 0.1111771700356718,
+      "UserCov": 0.0,
+      "Novelty": 6.648970134393878,
+      "Diversity": 0.7799893526693483,
+      "LongTail": 0.999575821845175,
+      "Head": 0.0,
+      "TrainS": 0.0001633330002732,
+      "PredictS": 0.0021927910001977,
+      "ModelMB": 0.007544,
+      "SparsityPct": NaN
+    },
+    {
+      "Model": "ItemMean",
+      "RMSE": 1.023141577839777,
+      "MAE": 0.8153434867242045,
+      "P@10": 0.0003232758620689,
+      "R@10": 0.0002467001389415,
+      "HR@10": 0.0032327586206896,
+      "NDCG@10": 0.0002686533043598,
+      "MAP@10": 5.918171866447729e-05,
+      "Coverage": 0.0071343638525564,
+      "UserCov": 0.0,
+      "Novelty": 8.702123814088548,
+      "Diversity": 0.7020366716306323,
+      "LongTail": 1.0,
+      "Head": 0.0,
+      "TrainS": 0.0005833750001329,
+      "PredictS": 0.0020040829999743,
+      "ModelMB": 0.013456,
+      "SparsityPct": NaN
+    },
+    {
+      "Model": "BiasBaseline",
+      "RMSE": 0.9437945814220744,
+      "MAE": 0.7485067772719683,
+      "P@10": 0.0683189655172413,
+      "R@10": 0.0490441718627088,
+      "HR@10": 0.3911637931034483,
+      "NDCG@10": 0.0703536484036369,
+      "MAP@10": 0.0279942566406351,
+      "Coverage": 0.0184304399524375,
+      "UserCov": 1.0,
+      "Novelty": 2.6427982519540145,
+      "Diversity": 0.7340373876240507,
+      "LongTail": 0.0037115588547189,
+      "Head": 0.5933191940615058,
+      "TrainS": 0.0196609170002375,
+      "PredictS": 0.0027962499998466,
+      "ModelMB": 0.021,
+      "SparsityPct": NaN
+    },
+    {
+      "Model": "Popularity",
+      "RMSE": 1.023141577839777,
+      "MAE": 0.8153434867242045,
+      "P@10": 0.1162715517241379,
+      "R@10": 0.1243557911368814,
+      "HR@10": 0.6196120689655172,
+      "NDCG@10": 0.1534973297490409,
+      "MAP@10": 0.0742998484415317,
+      "Coverage": 0.0237812128418549,
+      "UserCov": 1.0,
+      "Novelty": 1.565014305991333,
+      "Diversity": 0.76187375109653,
+      "LongTail": 0.0,
+      "Head": 1.0,
+      "TrainS": 0.0003707079999912,
+      "PredictS": 0.0019600000000536,
+      "ModelMB": 0.013456,
+      "SparsityPct": NaN
+    },
+    {
+      "Model": "PopularityPositive",
+      "RMSE": 1.023141577839777,
+      "MAE": 0.8153434867242045,
+      "P@10": 0.1173491379310344,
+      "R@10": 0.1129379059443441,
+      "HR@10": 0.5980603448275862,
+      "NDCG@10": 0.1536446552215945,
+      "MAP@10": 0.0759339170394371,
+      "Coverage": 0.0231866825208085,
+      "UserCov": 1.0,
+      "Novelty": 1.6662693217555264,
+      "Diversity": 0.6891631872463613,
+      "LongTail": 0.0,
+      "Head": 1.0,
+      "TrainS": 0.0010159159996874,
+      "PredictS": 0.0019258749998698,
+      "ModelMB": 0.013456,
+      "SparsityPct": NaN
+    },
+    {
+      "Model": "UBCF",
+      "RMSE": 1.0150561516815186,
+      "MAE": 0.8066938566408612,
+      "P@10": 0.1825431034482759,
+      "R@10": 0.2224919129026524,
+      "HR@10": 0.7844827586206896,
+      "NDCG@10": 0.2569637339644862,
+      "MAP@10": 0.1435958707597023,
+      "Coverage": 0.0802615933412604,
+      "UserCov": 1.0,
+      "Novelty": 2.020288511807743,
+      "Diversity": 0.6996123226876502,
+      "LongTail": 0.0,
+      "Head": 0.9194061505832448,
+      "TrainS": 0.0505150419999154,
+      "PredictS": 1.1696959999999308,
+      "ModelMB": 7.121536,
+      "SparsityPct": 91.50743099787687
+    },
+    {
+      "Model": "UBCF-rating",
+      "RMSE": 0.946788149752151,
+      "MAE": 0.7396481286052006,
+      "P@10": 0.0002155172413793,
+      "R@10": 0.0001953865100416,
+      "HR@10": 0.0021551724137931,
+      "NDCG@10": 0.0002166583563104,
+      "MAP@10": 6.208949096880131e-05,
+      "Coverage": 0.1605231866825208,
+      "UserCov": 1.0,
+      "Novelty": 8.396594911563051,
+      "Diversity": 0.7290703251364532,
+      "LongTail": 0.9996818663838812,
+      "Head": 0.0003181336161187,
+      "TrainS": 0.133539749999727,
+      "PredictS": 0.9418033749998358,
+      "ModelMB": 7.121536,
+      "SparsityPct": NaN
+    },
+    {
+      "Model": "IBCF",
+      "RMSE": 0.9402175956605314,
+      "MAE": 0.73803390626175,
+      "P@10": 0.1822198275862069,
+      "R@10": 0.2180645002186249,
+      "HR@10": 0.7780172413793104,
+      "NDCG@10": 0.259267014509181,
+      "MAP@10": 0.1496311278043305,
+      "Coverage": 0.1129607609988109,
+      "UserCov": 0.9989395546129376,
+      "Novelty": 2.0234467876342324,
+      "Diversity": 0.7231243320599123,
+      "LongTail": 0.0013785790031813,
+      "Head": 0.9366914103923648,
+      "TrainS": 0.0880061249999926,
+      "PredictS": 1.439668666000216,
+      "ModelMB": 22.653992,
+      "SparsityPct": 92.86139202855443
+    },
+    {
+      "Model": "IBCF-rating",
+      "RMSE": 0.9286790972660172,
+      "MAE": 0.7260347890304387,
+      "P@10": 0.002478448275862,
+      "R@10": 0.0016981413380253,
+      "HR@10": 0.0226293103448275,
+      "NDCG@10": 0.0023216441973858,
+      "MAP@10": 0.0006499726327312,
+      "Coverage": 0.1771700356718192,
+      "UserCov": 0.8525980911983033,
+      "Novelty": 8.102763496741918,
+      "Diversity": 0.7032706290382923,
+      "LongTail": 0.9692470837751856,
+      "Head": 0.0131495227995758,
+      "TrainS": 0.0779622499999277,
+      "PredictS": 1.417641666999771,
+      "ModelMB": 22.653992,
+      "SparsityPct": NaN
+    },
+    {
+      "Model": "RegressionCF",
+      "RMSE": 0.9407811242103048,
+      "MAE": 0.7458096720874325,
+      "P@10": 0.1662715517241379,
+      "R@10": 0.1788172689460187,
+      "HR@10": 0.7133620689655172,
+      "NDCG@10": 0.2289736995921417,
+      "MAP@10": 0.1275302667263425,
+      "Coverage": 0.2193816884661117,
+      "UserCov": 0.9989395546129376,
+      "Novelty": 2.408497723837805,
+      "Diversity": 0.6929488109167184,
+      "LongTail": 0.0428419936373276,
+      "Head": 0.7465535524920467,
+      "TrainS": 0.116717417000018,
+      "PredictS": 0.0296378749999348,
+      "ModelMB": 1.742444,
+      "SparsityPct": 97.62046400951814
+    },
+    {
+      "Model": "RegressionCF-rating",
+      "RMSE": 0.919115895408422,
+      "MAE": 0.7245837483404532,
+      "P@10": 0.0864224137931034,
+      "R@10": 0.0604686806478759,
+      "HR@10": 0.4504310344827586,
+      "NDCG@10": 0.1039290980071825,
+      "MAP@10": 0.0491919661183438,
+      "Coverage": 0.0850178359096314,
+      "UserCov": 1.0,
+      "Novelty": 2.637293497264029,
+      "Diversity": 0.7372475104059156,
+      "LongTail": 0.0199363732767762,
+      "Head": 0.5969247083775184,
+      "TrainS": 0.106802708000032,
+      "PredictS": 0.03458558300008,
+      "ModelMB": 1.742444,
+      "SparsityPct": NaN
+    },
+    {
+      "Model": "SLIM",
+      "RMSE": 1.0331168197746226,
+      "MAE": 0.832681768324915,
+      "P@10": 0.2085129310344827,
+      "R@10": 0.2449703763487404,
+      "HR@10": 0.8168103448275862,
+      "NDCG@10": 0.2949581315431235,
+      "MAP@10": 0.1729064112374675,
+      "Coverage": 0.2063020214030915,
+      "UserCov": 0.9989395546129376,
+      "Novelty": 2.282741867945627,
+      "Diversity": 0.7067266069828245,
+      "LongTail": 0.0167550371155885,
+      "Head": 0.7617179215270414,
+      "TrainS": 22.004483707999952,
+      "PredictS": 0.0622696669997822,
+      "ModelMB": 2.063388,
+      "SparsityPct": 93.93840793197526
+    },
+    {
+      "Model": "GraphRec",
+      "RMSE": 1.0724670329532704,
+      "MAE": 0.8698466623688735,
+      "P@10": 0.1776939655172414,
+      "R@10": 0.2131355050438399,
+      "HR@10": 0.7769396551724138,
+      "NDCG@10": 0.2545763826111706,
+      "MAP@10": 0.1432441494318033,
+      "Coverage": 0.079667063020214,
+      "UserCov": 0.9989395546129376,
+      "Novelty": 1.8402544216491783,
+      "Diversity": 0.7103905828533743,
+      "LongTail": 0.0021208907741251,
+      "Head": 0.9393425238600212,
+      "TrainS": 0.1198722910003198,
+      "PredictS": 0.0230248749999191,
+      "ModelMB": 13.163652,
+      "SparsityPct": NaN
+    }
+  ],
+  "rankings_all_models": [
+    {
+      "label": "Random",
+      "rank_predictive_accuracy": 14,
+      "value_predictive_accuracy": 1.1203114293608811,
+      "rank_ranking_quality": 10,
+      "value_ranking_quality": 0.0079113848679688,
+      "rank_coverage": 1,
+      "value_coverage": 0.9946492271105828,
+      "rank_novelty": 6,
+      "value_novelty": 5.825823181788103,
+      "rank_diversity": 3,
+      "value_diversity": 0.7652744681471785,
+      "rank_efficiency": 6,
+      "value_efficiency": 0.0071205840004039
+    },
+    {
+      "label": "GlobalMean",
+      "rank_predictive_accuracy": 14,
+      "value_predictive_accuracy": 1.1203114293608811,
+      "rank_ranking_quality": 12,
+      "value_ranking_quality": 0.0014968946906207,
+      "rank_coverage": 7,
+      "value_coverage": 0.1111771700356718,
+      "rank_novelty": 4,
+      "value_novelty": 6.648970134393878,
+      "rank_diversity": 1,
+      "value_diversity": 0.7799893526693483,
+      "rank_efficiency": 1,
+      "value_efficiency": 0.0018638340002325533
+    },
+    {
+      "label": "UserMean",
+      "rank_predictive_accuracy": 12,
+      "value_predictive_accuracy": 1.0411582606632497,
+      "rank_ranking_quality": 12,
+      "value_ranking_quality": 0.0014968946906207,
+      "rank_coverage": 7,
+      "value_coverage": 0.1111771700356718,
+      "rank_novelty": 4,
+      "value_novelty": 6.648970134393878,
+      "rank_diversity": 1,
+      "value_diversity": 0.7799893526693483,
+      "rank_efficiency": 3,
+      "value_efficiency": 0.0023561240004709
+    },
+    {
+      "label": "ItemMean",
+      "rank_predictive_accuracy": 8,
+      "value_predictive_accuracy": 1.023141577839777,
+      "rank_ranking_quality": 14,
+      "value_ranking_quality": 0.0002686533043598,
+      "rank_coverage": 15,
+      "value_coverage": 0.0071343638525564,
+      "rank_novelty": 1,
+      "value_novelty": 8.702123814088548,
+      "rank_diversity": 12,
+      "value_diversity": 0.7020366716306323,
+      "rank_efficiency": 4,
+      "value_efficiency": 0.0025874580001072
+    },
+    {
+      "label": "BiasBaseline",
+      "rank_predictive_accuracy": 5,
+      "value_predictive_accuracy": 0.9437945814220744,
+      "rank_ranking_quality": 9,
+      "value_ranking_quality": 0.0703536484036369,
+      "rank_coverage": 14,
+      "value_coverage": 0.0184304399524375,
+      "rank_novelty": 7,
+      "value_novelty": 2.6427982519540145,
+      "rank_diversity": 6,
+      "value_diversity": 0.7340373876240507,
+      "rank_efficiency": 7,
+      "value_efficiency": 0.0224571670000841
+    },
+    {
+      "label": "Popularity",
+      "rank_predictive_accuracy": 8,
+      "value_predictive_accuracy": 1.023141577839777,
+      "rank_ranking_quality": 7,
+      "value_ranking_quality": 0.1534973297490409,
+      "rank_coverage": 12,
+      "value_coverage": 0.0237812128418549,
+      "rank_novelty": 15,
+      "value_novelty": 1.565014305991333,
+      "rank_diversity": 4,
+      "value_diversity": 0.76187375109653,
+      "rank_efficiency": 2,
+      "value_efficiency": 0.0023307080000448
+    },
+    {
+      "label": "PopularityPositive",
+      "rank_predictive_accuracy": 8,
+      "value_predictive_accuracy": 1.023141577839777,
+      "rank_ranking_quality": 6,
+      "value_ranking_quality": 0.1536446552215945,
+      "rank_coverage": 13,
+      "value_coverage": 0.0231866825208085,
+      "rank_novelty": 14,
+      "value_novelty": 1.6662693217555264,
+      "rank_diversity": 15,
+      "value_diversity": 0.6891631872463613,
+      "rank_efficiency": 5,
+      "value_efficiency": 0.0029417909995571997
+    },
+    {
+      "label": "UBCF",
+      "rank_predictive_accuracy": 7,
+      "value_predictive_accuracy": 1.0150561516815186,
+      "rank_ranking_quality": 3,
+      "value_ranking_quality": 0.2569637339644862,
+      "rank_coverage": 10,
+      "value_coverage": 0.0802615933412604,
+      "rank_novelty": 12,
+      "value_novelty": 2.020288511807743,
+      "rank_diversity": 13,
+      "value_diversity": 0.6996123226876502,
+      "rank_efficiency": 12,
+      "value_efficiency": 1.2202110419998462
+    },
+    {
+      "label": "UBCF-rating",
+      "rank_predictive_accuracy": 6,
+      "value_predictive_accuracy": 0.946788149752151,
+      "rank_ranking_quality": 15,
+      "value_ranking_quality": 0.0002166583563104,
+      "rank_coverage": 5,
+      "value_coverage": 0.1605231866825208,
+      "rank_novelty": 2,
+      "value_novelty": 8.396594911563051,
+      "rank_diversity": 7,
+      "value_diversity": 0.7290703251364532,
+      "rank_efficiency": 11,
+      "value_efficiency": 1.0753431249995629
+    },
+    {
+      "label": "IBCF",
+      "rank_predictive_accuracy": 3,
+      "value_predictive_accuracy": 0.9402175956605314,
+      "rank_ranking_quality": 2,
+      "value_ranking_quality": 0.259267014509181,
+      "rank_coverage": 6,
+      "value_coverage": 0.1129607609988109,
+      "rank_novelty": 11,
+      "value_novelty": 2.0234467876342324,
+      "rank_diversity": 8,
+      "value_diversity": 0.7231243320599123,
+      "rank_efficiency": 14,
+      "value_efficiency": 1.5276747910002086
+    },
+    {
+      "label": "IBCF-rating",
+      "rank_predictive_accuracy": 2,
+      "value_predictive_accuracy": 0.9286790972660172,
+      "rank_ranking_quality": 11,
+      "value_ranking_quality": 0.0023216441973858,
+      "rank_coverage": 4,
+      "value_coverage": 0.1771700356718192,
+      "rank_novelty": 3,
+      "value_novelty": 8.102763496741918,
+      "rank_diversity": 11,
+      "value_diversity": 0.7032706290382923,
+      "rank_efficiency": 13,
+      "value_efficiency": 1.4956039169996986
+    },
+    {
+      "label": "RegressionCF",
+      "rank_predictive_accuracy": 4,
+      "value_predictive_accuracy": 0.9407811242103048,
+      "rank_ranking_quality": 5,
+      "value_ranking_quality": 0.2289736995921417,
+      "rank_coverage": 2,
+      "value_coverage": 0.2193816884661117,
+      "rank_novelty": 9,
+      "value_novelty": 2.408497723837805,
+      "rank_diversity": 14,
+      "value_diversity": 0.6929488109167184,
+      "rank_efficiency": 10,
+      "value_efficiency": 0.1463552919999528
+    },
+    {
+      "label": "RegressionCF-rating",
+      "rank_predictive_accuracy": 1,
+      "value_predictive_accuracy": 0.919115895408422,
+      "rank_ranking_quality": 8,
+      "value_ranking_quality": 0.1039290980071825,
+      "rank_coverage": 9,
+      "value_coverage": 0.0850178359096314,
+      "rank_novelty": 8,
+      "value_novelty": 2.637293497264029,
+      "rank_diversity": 5,
+      "value_diversity": 0.7372475104059156,
+      "rank_efficiency": 8,
+      "value_efficiency": 0.141388291000112
+    },
+    {
+      "label": "SLIM",
+      "rank_predictive_accuracy": 11,
+      "value_predictive_accuracy": 1.0331168197746226,
+      "rank_ranking_quality": 1,
+      "value_ranking_quality": 0.2949581315431235,
+      "rank_coverage": 3,
+      "value_coverage": 0.2063020214030915,
+      "rank_novelty": 10,
+      "value_novelty": 2.282741867945627,
+      "rank_diversity": 10,
+      "value_diversity": 0.7067266069828245,
+      "rank_efficiency": 15,
+      "value_efficiency": 22.066753374999735
+    },
+    {
+      "label": "GraphRec",
+      "rank_predictive_accuracy": 13,
+      "value_predictive_accuracy": 1.0724670329532704,
+      "rank_ranking_quality": 4,
+      "value_ranking_quality": 0.2545763826111706,
+      "rank_coverage": 11,
+      "value_coverage": 0.079667063020214,
+      "rank_novelty": 13,
+      "value_novelty": 1.8402544216491783,
+      "rank_diversity": 9,
+      "value_diversity": 0.7103905828533743,
+      "rank_efficiency": 9,
+      "value_efficiency": 0.1428971660002389
+    }
+  ],
+  "rankings_paradigms_only": [
+    {
+      "label": "UBCF",
+      "rank_predictive_accuracy": 3,
+      "value_predictive_accuracy": 1.0150561516815186,
+      "rank_ranking_quality": 3,
+      "value_ranking_quality": 0.2569637339644862,
+      "rank_coverage": 4,
+      "value_coverage": 0.0802615933412604,
+      "rank_novelty": 4,
+      "value_novelty": 2.020288511807743,
+      "rank_diversity": 4,
+      "value_diversity": 0.6996123226876502,
+      "rank_efficiency": 3,
+      "value_efficiency": 1.2202110419998462
+    },
+    {
+      "label": "IBCF",
+      "rank_predictive_accuracy": 1,
+      "value_predictive_accuracy": 0.9402175956605314,
+      "rank_ranking_quality": 2,
+      "value_ranking_quality": 0.259267014509181,
+      "rank_coverage": 3,
+      "value_coverage": 0.1129607609988109,
+      "rank_novelty": 3,
+      "value_novelty": 2.0234467876342324,
+      "rank_diversity": 1,
+      "value_diversity": 0.7231243320599123,
+      "rank_efficiency": 4,
+      "value_efficiency": 1.5276747910002086
+    },
+    {
+      "label": "RegressionCF",
+      "rank_predictive_accuracy": 2,
+      "value_predictive_accuracy": 0.9407811242103048,
+      "rank_ranking_quality": 5,
+      "value_ranking_quality": 0.2289736995921417,
+      "rank_coverage": 1,
+      "value_coverage": 0.2193816884661117,
+      "rank_novelty": 1,
+      "value_novelty": 2.408497723837805,
+      "rank_diversity": 5,
+      "value_diversity": 0.6929488109167184,
+      "rank_efficiency": 2,
+      "value_efficiency": 0.1463552919999528
+    },
+    {
+      "label": "SLIM",
+      "rank_predictive_accuracy": 4,
+      "value_predictive_accuracy": 1.0331168197746226,
+      "rank_ranking_quality": 1,
+      "value_ranking_quality": 0.2949581315431235,
+      "rank_coverage": 2,
+      "value_coverage": 0.2063020214030915,
+      "rank_novelty": 2,
+      "value_novelty": 2.282741867945627,
+      "rank_diversity": 3,
+      "value_diversity": 0.7067266069828245,
+      "rank_efficiency": 5,
+      "value_efficiency": 22.066753374999735
+    },
+    {
+      "label": "GraphRec",
+      "rank_predictive_accuracy": 5,
+      "value_predictive_accuracy": 1.0724670329532704,
+      "rank_ranking_quality": 4,
+      "value_ranking_quality": 0.2545763826111706,
+      "rank_coverage": 5,
+      "value_coverage": 0.079667063020214,
+      "rank_novelty": 5,
+      "value_novelty": 1.8402544216491783,
+      "rank_diversity": 2,
+      "value_diversity": 0.7103905828533743,
+      "rank_efficiency": 1,
+      "value_efficiency": 0.1428971660002389
+    }
+  ],
+  "axis_winners": {
+    "predictive_accuracy": {
+      "metric": "rmse",
+      "higher_is_better": false,
+      "order": [
+        {
+          "model": "IBCF",
+          "value": 0.9402175956605314
+        },
+        {
+          "model": "RegressionCF",
+          "value": 0.9407811242103048
+        },
+        {
+          "model": "UBCF",
+          "value": 1.0150561516815186
+        },
+        {
+          "model": "SLIM",
+          "value": 1.0331168197746226
+        },
+        {
+          "model": "GraphRec",
+          "value": 1.0724670329532704
+        }
+      ],
+      "winner": "IBCF"
+    },
+    "ranking_quality": {
+      "metric": "ndcg_mean",
+      "higher_is_better": true,
+      "order": [
+        {
+          "model": "SLIM",
+          "value": 0.2949581315431235
+        },
+        {
+          "model": "IBCF",
+          "value": 0.259267014509181
+        },
+        {
+          "model": "UBCF",
+          "value": 0.2569637339644862
+        },
+        {
+          "model": "GraphRec",
+          "value": 0.2545763826111706
+        },
+        {
+          "model": "RegressionCF",
+          "value": 0.2289736995921417
+        }
+      ],
+      "winner": "SLIM"
+    },
+    "coverage": {
+      "metric": "catalog_coverage",
+      "higher_is_better": true,
+      "order": [
+        {
+          "model": "RegressionCF",
+          "value": 0.2193816884661117
+        },
+        {
+          "model": "SLIM",
+          "value": 0.2063020214030915
+        },
+        {
+          "model": "IBCF",
+          "value": 0.1129607609988109
+        },
+        {
+          "model": "UBCF",
+          "value": 0.0802615933412604
+        },
+        {
+          "model": "GraphRec",
+          "value": 0.079667063020214
+        }
+      ],
+      "winner": "RegressionCF"
+    },
+    "novelty": {
+      "metric": "novelty_mean",
+      "higher_is_better": true,
+      "order": [
+        {
+          "model": "RegressionCF",
+          "value": 2.408497723837805
+        },
+        {
+          "model": "SLIM",
+          "value": 2.282741867945627
+        },
+        {
+          "model": "IBCF",
+          "value": 2.0234467876342324
+        },
+        {
+          "model": "UBCF",
+          "value": 2.020288511807743
+        },
+        {
+          "model": "GraphRec",
+          "value": 1.8402544216491783
+        }
+      ],
+      "winner": "RegressionCF"
+    },
+    "diversity": {
+      "metric": "ild_mean",
+      "higher_is_better": true,
+      "order": [
+        {
+          "model": "IBCF",
+          "value": 0.7231243320599123
+        },
+        {
+          "model": "GraphRec",
+          "value": 0.7103905828533743
+        },
+        {
+          "model": "SLIM",
+          "value": 0.7067266069828245
+        },
+        {
+          "model": "UBCF",
+          "value": 0.6996123226876502
+        },
+        {
+          "model": "RegressionCF",
+          "value": 0.6929488109167184
+        }
+      ],
+      "winner": "IBCF"
+    },
+    "efficiency": {
+      "metric": "total_time_s",
+      "higher_is_better": false,
+      "order": [
+        {
+          "model": "GraphRec",
+          "value": 0.1428971660002389
+        },
+        {
+          "model": "RegressionCF",
+          "value": 0.1463552919999528
+        },
+        {
+          "model": "UBCF",
+          "value": 1.2202110419998462
+        },
+        {
+          "model": "IBCF",
+          "value": 1.5276747910002086
+        },
+        {
+          "model": "SLIM",
+          "value": 22.066753374999735
+        }
+      ],
+      "winner": "GraphRec"
+    }
+  },
+  "tradeoffs": {
+    "no_single_best": "The five paradigms win on different axes, and the axes are in tension: the measured ordering on ranking quality is nearly the reverse of the ordering on coverage and novelty. Declaring one 'best' requires first declaring which axis the product is optimising.",
+    "accuracy_vs_coverage": {
+      "ranking_winner": "SLIM",
+      "ranking_winner_coverage": 0.2063020214030915,
+      "coverage_winner": "RegressionCF",
+      "coverage_winner_ndcg": 0.2289736995921417
+    },
+    "accuracy_vs_rating_error": {
+      "rmse_winner": "IBCF",
+      "rmse_winner_ndcg": 0.259267014509181,
+      "ndcg_winner_rmse": 1.0331168197746226,
+      "note": "Minimising squared error on observed ratings and ordering unseen items well are different objectives; this table measures how far apart they land on the same data."
+    }
+  },
+  "model_sparsity_note": "For SLIM, sparsity is the measured fraction of zero off-diagonal entries in the learned W. For the neighbourhood models it is the structural sparsity 1 - k/(n-1) of the retained neighbour lists, which is a definition of convenience, not a learned quantity."
+}

@@ -1,0 +1,26 @@
+item,title,n_models,models,train_popularity,group,held_out_rating
+55,Pulp Fiction (1994),4,"UBCF, IBCF, SLIM, GraphRec",287,head,5.0
+97,"Silence of the Lambs, The (1991)",4,"UBCF, IBCF, SLIM, GraphRec",275,head,
+171,"Empire Strikes Back, The (1980)",4,"UBCF, IBCF, RegressionCF, GraphRec",254,head,5.0
+172,"Princess Bride, The (1987)",3,"UBCF, IBCF, GraphRec",247,head,4.0
+167,Monty Python and the Holy Grail (1974),3,"UBCF, IBCF, GraphRec",218,head,5.0
+182,Alien (1979),3,"UBCF, IBCF, RegressionCF",206,head,5.0
+95,Terminator 2: Judgment Day (1991),3,"UBCF, RegressionCF, SLIM",202,head,5.0
+6,Twelve Monkeys (1995),2,"SLIM, GraphRec",286,head,4.0
+78,"Fugitive, The (1993)",2,"IBCF, GraphRec",256,head,
+209,Indiana Jones and the Last Crusade (1989),2,"IBCF, RegressionCF",232,head,4.0
+317,Schindler's List (1993),2,"UBCF, GraphRec",227,head,
+88,Blade Runner (1982),2,"UBCF, IBCF",201,head,3.0
+63,"Shawshank Redemption, The (1994)",2,"UBCF, GraphRec",193,head,
+184,Psycho (1960),2,"RegressionCF, SLIM",166,head,5.0
+179,Apocalypse Now (1979),2,"RegressionCF, SLIM",143,head,
+257,Contact (1997),1,GraphRec,368,head,
+150,Willy Wonka and the Chocolate Factory (1971),1,RegressionCF,242,head,
+68,Forrest Gump (1994),1,SLIM,218,head,
+215,When Harry Met Sally... (1989),1,IBCF,217,head,4.0
+134,2001: A Space Odyssey (1968),1,RegressionCF,186,head,
+181,GoodFellas (1990),1,SLIM,174,head,
+152,"Fish Called Wanda, A (1988)",1,RegressionCF,172,head,4.0
+193,"Sting, The (1973)",1,SLIM,166,head,4.0
+186,"Godfather: Part II, The (1974)",1,SLIM,145,head,
+12,Mighty Aphrodite (1995),1,RegressionCF,133,medium,

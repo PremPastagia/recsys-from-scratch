@@ -1,0 +1,152 @@
+{
+  "best_for_sparse_users_ndcg": {
+    "model": "SLIM",
+    "ndcg": 0.2639564482760538,
+    "runner_up": "IBCF"
+  },
+  "best_for_sparse_users_rmse": {
+    "model": "RegressionCF",
+    "rmse": 0.9862638538231046
+  },
+  "benefits_most_from_history": {
+    "model": "RegressionCF",
+    "absolute_ndcg_gain_heavy_minus_sparse": 0.14772203397133243,
+    "relative_gain": 0.7994041302332359,
+    "all_gains": {
+      "UBCF": 0.08259051346807073,
+      "IBCF": 0.07193404625438782,
+      "RegressionCF": 0.14772203397133243,
+      "SLIM": 0.10884526044991538,
+      "GraphRec": 0.08823572565701682
+    }
+  },
+  "least_sensitive_to_history": {
+    "model": "IBCF",
+    "absolute_ndcg_gain": 0.07193404625438782
+  },
+  "sensitivity_ranking_by_relative_ndcg_gain": {
+    "RegressionCF": 0.7994041302332359,
+    "SLIM": 0.41236067980457763,
+    "GraphRec": 0.37100261628938375,
+    "UBCF": 0.34295573464208085,
+    "IBCF": 0.28242502433473515
+  },
+  "user_group_definition": {
+    "rule": "tertiles of TRAIN history length",
+    "q1": 30.0,
+    "q2": 81.0,
+    "n_sparse": 321,
+    "n_medium": 312,
+    "n_heavy": 310
+  },
+  "item_group_ndcg": {
+    "head": {
+      "BiasBaseline": 0.07407830422289494,
+      "GlobalMean": 0.0,
+      "GraphRec": 0.3533527956719296,
+      "IBCF": 0.35146020789729665,
+      "IBCF-rating": 0.001574096491419805,
+      "ItemMean": 0.0,
+      "Popularity": 0.2183954739609848,
+      "PopularityPositive": 0.2164945617061346,
+      "Random": 0.004142726992663019,
+      "RegressionCF": 0.2830933588224137,
+      "RegressionCF-rating": 0.11046770908533614,
+      "SLIM": 0.3600803476418002,
+      "UBCF": 0.35075184330761855,
+      "UBCF-rating": 8.078882392186773e-05,
+      "UserMean": 0.0
+    },
+    "long_tail": {
+      "BiasBaseline": 0.00038579563613562267,
+      "GlobalMean": 0.0022690462187834578,
+      "GraphRec": 0.0006419404477849204,
+      "IBCF": 0.0004369085568417724,
+      "IBCF-rating": 0.0020036618713152876,
+      "ItemMean": 0.0007367264560290744,
+      "Popularity": 0.0,
+      "PopularityPositive": 0.0,
+      "Random": 0.0032904395589457274,
+      "RegressionCF": 0.007308260634112818,
+      "RegressionCF-rating": 0.0018171911322294072,
+      "SLIM": 0.00648728925516675,
+      "UBCF": 0.0,
+      "UBCF-rating": 0.000725689404934688,
+      "UserMean": 0.0022690462187834578
+    },
+    "medium": {
+      "BiasBaseline": 0.02626392292318438,
+      "GlobalMean": 0.0,
+      "GraphRec": 0.020509090987380515,
+      "IBCF": 0.031904839062848626,
+      "IBCF-rating": 0.00024770177765312323,
+      "ItemMean": 0.0,
+      "Popularity": 0.0,
+      "PopularityPositive": 0.0,
+      "Random": 0.005120422146086375,
+      "RegressionCF": 0.0466930859822284,
+      "RegressionCF-rating": 0.037571627020041,
+      "SLIM": 0.08264889965180475,
+      "UBCF": 0.031999050266551934,
+      "UBCF-rating": 0.0,
+      "UserMean": 0.0
+    }
+  },
+  "item_group_recall": {
+    "head": {
+      "BiasBaseline": 0.09634678136231646,
+      "GlobalMean": 0.0,
+      "GraphRec": 0.4244090996170932,
+      "IBCF": 0.42774677639780917,
+      "IBCF-rating": 0.002019515693713078,
+      "ItemMean": 0.0,
+      "Popularity": 0.2747248860820718,
+      "PopularityPositive": 0.2575301809519607,
+      "Random": 0.005758908116045976,
+      "RegressionCF": 0.3221994437760627,
+      "RegressionCF-rating": 0.11437189573208173,
+      "SLIM": 0.4234021799719701,
+      "UBCF": 0.4339454101175828,
+      "UBCF-rating": 0.00013211784912141628,
+      "UserMean": 0.0
+    },
+    "long_tail": {
+      "BiasBaseline": 0.0006738544474393531,
+      "GlobalMean": 0.0021214116759664444,
+      "GraphRec": 0.0019351717464925011,
+      "IBCF": 0.001451378809869376,
+      "IBCF-rating": 0.003392132782553682,
+      "ItemMean": 0.0017081612146924194,
+      "Popularity": 0.0,
+      "PopularityPositive": 0.0,
+      "Random": 0.004693645332252009,
+      "RegressionCF": 0.013020941322828116,
+      "RegressionCF-rating": 0.0034487162571342545,
+      "SLIM": 0.01271857073743866,
+      "UBCF": 0.0,
+      "UBCF-rating": 0.001451378809869376,
+      "UserMean": 0.0021214116759664444
+    },
+    "medium": {
+      "BiasBaseline": 0.03319722157433925,
+      "GlobalMean": 0.0,
+      "GraphRec": 0.04349166062364032,
+      "IBCF": 0.05895597634176314,
+      "IBCF-rating": 0.00010844485463774803,
+      "ItemMean": 0.0,
+      "Popularity": 0.0,
+      "PopularityPositive": 0.0,
+      "Random": 0.006908404416989069,
+      "RegressionCF": 0.0841336490987408,
+      "RegressionCF-rating": 0.04421107263806731,
+      "SLIM": 0.13622530156383544,
+      "UBCF": 0.06384873273197164,
+      "UBCF-rating": 0.0,
+      "UserMean": 0.0
+    }
+  },
+  "partition_check": {
+    "user_groups_cover_all_users": true,
+    "item_groups_cover_all_items": true
+  }
+}

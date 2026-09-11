@@ -1,0 +1,11 @@
+# Core scientific stack. No recommender-system library is used anywhere in this project:
+# UBCF, IBCF, regression-based neighbourhood CF, SLIM and the graph recommenders are all
+# implemented from scratch on NumPy / SciPy sparse primitives.
+numpy>=1.26
+pandas>=2.0
+scipy>=1.11
+scikit-learn>=1.3       # utilities and cross-checks only, never a recommender
+matplotlib>=3.8
+seaborn>=0.13
+# Optional: the demo application (Part Q)
+streamlit>=1.30

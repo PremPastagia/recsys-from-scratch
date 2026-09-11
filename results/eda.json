@@ -1,0 +1,121 @@
+{
+  "overview": {
+    "dataset": "MovieLens 100K",
+    "zip_md5": "0e33842e24a9c977be4e0107933c0723",
+    "n_users": 943,
+    "n_items": 1682,
+    "n_ratings": 100000,
+    "rating_scale_min": 1.0,
+    "rating_scale_max": 5.0,
+    "rating_values": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0
+    ],
+    "mean_rating": 3.52986,
+    "std_rating": 1.125673599144129,
+    "avg_ratings_per_user": 106.04453870625663,
+    "median_ratings_per_user": 65.0,
+    "min_ratings_per_user": 20,
+    "max_ratings_per_user": 737,
+    "avg_ratings_per_item": 59.45303210463734,
+    "median_ratings_per_item": 27.0,
+    "min_ratings_per_item": 1,
+    "max_ratings_per_item": 583,
+    "items_with_zero_ratings": 0,
+    "matrix_cells": 1586126,
+    "observed_entries": 100000,
+    "density_pct": 6.304669364224532,
+    "sparsity_pct": 93.69533063577546
+  },
+  "popularity_groups": {
+    "threshold_rule": "Items are sorted by descending TRAIN interaction count and the cumulative interaction curve is cut at 1/3 and 2/3 of total interaction mass. Each group therefore absorbs the same share of observed attention, which makes the partition scale-free and exposure-weighted rather than dependent on an arbitrary rating-count constant.",
+    "cuts_of_interaction_mass": [
+      0.3333333333333333,
+      0.6666666666666666
+    ],
+    "n_head": 116,
+    "n_medium": 241,
+    "n_long_tail": 1325,
+    "head_pct_of_catalog": 6.896551724137931,
+    "medium_pct_of_catalog": 14.328180737217599,
+    "long_tail_pct_of_catalog": 78.77526753864447,
+    "head_min_train_count": 143,
+    "medium_min_train_count": 66,
+    "total_train_interactions": 70771,
+    "alternative_top20pct_rule_head_size": 336
+  },
+  "user_history_groups": {
+    "rule": "Tertiles of TRAIN history length (<=q1 sparse, <=q2 medium, else heavy).",
+    "q1_history": 30.0,
+    "q2_history": 81.0,
+    "n_sparse": 321,
+    "n_medium": 312,
+    "n_heavy": 310,
+    "min_history": 14,
+    "max_history": 517
+  },
+  "split": {
+    "n_train": 70771,
+    "n_val": 9596,
+    "n_test": 19633,
+    "train_pct": 70.771,
+    "val_pct": 9.596,
+    "test_pct": 19.633,
+    "seed": 2310049,
+    "protocol": "Per-user stratified random split: within each user's ratings, 20% go to test and 10% to validation, the rest to train, with every user guaranteed at least one training rating.",
+    "leakage_argument": "1) Models are fitted on R_train alone -- every similarity, bias, learned weight, Gram matrix and graph edge is derived from train. 2) Top-N candidate sets exclude only TRAIN-rated items; excluding test items would reveal which items are held out. 3) Hyper-parameters (k, lambda, ranking head, restart strength) are chosen on the validation split; the test split is consumed once, at reporting time. 4) Popularity groups, novelty weights and user-history tertiles are all computed from train counts, so even the analysis strata are leakage-free.",
+    "test_positives": 10837,
+    "val_positives": 5299,
+    "users_with_test_positives": 928
+  },
+  "target_user": {
+    "roll_number": "23IM10049",
+    "digits_extracted": "2310049",
+    "digits_as_int": 2310049,
+    "n_users": 943,
+    "modulo": 642,
+    "formula": "target_user_id = (int(digits(roll)) mod n_users) + 1",
+    "target_user_id": 643,
+    "target_internal_index": 642,
+    "seed_formula": "SEED = int(digits(roll)) mod (2**31 - 1)",
+    "seed": 2310049,
+    "mapping_explanation": "roll='23IM10049' -> digits='2310049' -> 2310049 mod 943 = 642 -> +1 -> user_id 643",
+    "n_ratings_total": 206,
+    "n_train_before_hiding": 145,
+    "n_kept_visible": 101,
+    "n_hidden": 44,
+    "n_global_test": 41,
+    "hide_fraction": 0.3,
+    "target_mean_rating": 3.737864077669903
+  },
+  "config": {
+    "seed": 2310049,
+    "roll": "23IM10049",
+    "test_frac": 0.2,
+    "val_frac": 0.1,
+    "top_k": 10,
+    "relevance_threshold": 4.0,
+    "implicit_threshold": 4.0,
+    "k_grid": [
+      5,
+      10,
+      20,
+      30,
+      50,
+      80,
+      120,
+      200,
+      300
+    ],
+    "min_support": 3,
+    "shrinkage_beta": 25.0,
+    "target_hide_frac": 0.3,
+    "popularity_mass_cuts": [
+      0.3333333333333333,
+      0.6666666666666666
+    ]
+  }
+}

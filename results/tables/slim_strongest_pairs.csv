@@ -1,0 +1,31 @@
+from_item,from_title,to_item,to_title,coefficient,from_train_pop,to_train_pop
+245,Chasing Amy (1997),267,Chasing Amy (1997),0.20664347353911627,82,186
+315,As Good As It Gets (1997),314,Apt Pupil (1998),0.19251985394305654,75,120
+188,"Grand Day Out, A (1992)",168,"Wrong Trousers, The (1993)",0.19190616754876358,47,90
+180,Return of the Jedi (1983),49,Star Wars (1977),0.18423872779884315,370,421
+188,"Grand Day Out, A (1992)",407,"Close Shave, A (1995)",0.18334850500623454,47,83
+165,Manon of the Spring (Manon des sources) (1986),164,Jean de Florette (1986),0.18211299796815597,40,49
+164,Jean de Florette (1986),165,Manon of the Spring (Manon des sources) (1986),0.17022813768965422,49,40
+49,Star Wars (1977),180,Return of the Jedi (1983),0.16356331462662568,421,370
+407,"Close Shave, A (1995)",168,"Wrong Trousers, The (1993)",0.15503151807588478,83,90
+314,Apt Pupil (1998),315,As Good As It Gets (1997),0.1539196738213152,120,75
+168,"Wrong Trousers, The (1993)",407,"Close Shave, A (1995)",0.1508209800249421,90,83
+60,Three Colors: White (1994),58,Three Colors: Red (1994),0.14812981052583163,46,60
+894,Scream 2 (1997),287,Scream (1996),0.1362411278614097,76,340
+168,"Wrong Trousers, The (1993)",188,"Grand Day Out, A (1992)",0.13415034958610633,90,47
+549,Die Hard: With a Vengeance (1995),225,Die Hard 2 (1990),0.13350461543022182,107,116
+407,"Close Shave, A (1995)",188,"Grand Day Out, A (1992)",0.13252964257961317,83,47
+267,Chasing Amy (1997),245,Chasing Amy (1997),0.13105636228280382,186,82
+225,Die Hard 2 (1990),549,Die Hard: With a Vengeance (1995),0.12981637016920097,116,107
+226,Star Trek VI: The Undiscovered Country (1991),229,Star Trek IV: The Voyage Home (1986),0.1297803989611516,110,145
+186,"Godfather: Part II, The (1974)",126,"Godfather, The (1972)",0.12950220419025998,145,281
+115,Cold Comfort Farm (1995),284,Secrets & Lies (1996),0.129460223248056,84,122
+314,Apt Pupil (1998),271,Good Will Hunting (1997),0.1286833318094806,120,131
+59,Three Colors: Blue (1993),58,Three Colors: Red (1994),0.1260206772708861,48,60
+681,I Know What You Did Last Summer (1997),287,Scream (1996),0.12489057325546703,81,340
+310,"Wings of the Dove, The (1997)",285,"English Patient, The (1996)",0.12418764549617378,57,345
+256,Men in Black (1997),180,Return of the Jedi (1983),0.12310776035068302,218,370
+229,Star Trek IV: The Voyage Home (1986),226,Star Trek VI: The Undiscovered Country (1991),0.12228183947586865,145,110
+58,Three Colors: Red (1994),60,Three Colors: White (1994),0.12149322864686488,60,46
+229,Star Trek IV: The Voyage Home (1986),227,Star Trek: The Wrath of Khan (1982),0.12028777632264308,145,181
+60,Three Colors: White (1994),59,Three Colors: Blue (1993),0.11964250212364543,46,48

@@ -1,0 +1,73 @@
+{
+  "n_figures": 17,
+  "manifest": [
+    {
+      "figure": "fig01_rating_distribution.png",
+      "bytes": 49138
+    },
+    {
+      "figure": "fig02_user_activity.png",
+      "bytes": 73247
+    },
+    {
+      "figure": "fig03_item_popularity.png",
+      "bytes": 64423
+    },
+    {
+      "figure": "fig04_long_tail.png",
+      "bytes": 90202
+    },
+    {
+      "figure": "fig05_sparsity.png",
+      "bytes": 300438
+    },
+    {
+      "figure": "fig06_k_vs_rmse_mae.png",
+      "bytes": 185119
+    },
+    {
+      "figure": "fig07_k_vs_ndcg_recall.png",
+      "bytes": 247431
+    },
+    {
+      "figure": "fig08_ranking_comparison.png",
+      "bytes": 333375
+    },
+    {
+      "figure": "fig09_coverage_comparison.png",
+      "bytes": 134139
+    },
+    {
+      "figure": "fig10_novelty_diversity.png",
+      "bytes": 192020
+    },
+    {
+      "figure": "fig11_popularity_bias.png",
+      "bytes": 215979
+    },
+    {
+      "figure": "fig12_long_tail_exposure.png",
+      "bytes": 197896
+    },
+    {
+      "figure": "fig13_regression_sim_vs_coef.png",
+      "bytes": 270305
+    },
+    {
+      "figure": "fig14_slim_sparsity_vs_performance.png",
+      "bytes": 141651
+    },
+    {
+      "figure": "fig15_slim_regularisation.png",
+      "bytes": 194564
+    },
+    {
+      "figure": "fig16_runtime.png",
+      "bytes": 161472
+    },
+    {
+      "figure": "fig17_coldstart.png",
+      "bytes": 98512
+    }
+  ]
+}

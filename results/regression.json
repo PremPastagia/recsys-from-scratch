@@ -1,0 +1,51 @@
+{
+  "deep_dive_spec": {
+    "family": "regression",
+    "k": 40,
+    "lam": 100.0,
+    "similarity": "adjusted_cosine",
+    "weight_mode": "learned"
+  },
+  "pearson_sim_coef": 0.617160951676523,
+  "spearman_sim_coef": 0.7185558325479398,
+  "frac_negative_coefficients": 0.05538109756097561,
+  "frac_sign_flip_positive_sim_negative_coef": 0.019054878048780487,
+  "coef_mean": 0.02064223927830415,
+  "coef_std": 0.022826831270097117,
+  "coef_p01": -0.01208258442902893,
+  "coef_p99": 0.09541068881863018,
+  "coef_sum_mean_per_item": 0.8050718767281523,
+  "similarity_weight_sum_per_item": 1.0,
+  "rank_deficient_solves": 0,
+  "best_rating_config": {
+    "k": 40,
+    "lam": 100.0,
+    "val_rmse": 0.9180050338813767
+  },
+  "best_ranking_config": {
+    "k": 40,
+    "lam": 3000.0,
+    "rank_mode": "affinity",
+    "val_ndcg": 0.14842726596304506
+  },
+  "ranking_selected": {
+    "family": "regression",
+    "k": 40,
+    "lam": 3000.0,
+    "similarity": "adjusted_cosine",
+    "weight_mode": "learned",
+    "rank_mode": "affinity"
+  },
+  "rating_selected": {
+    "family": "regression",
+    "k": 40,
+    "lam": 100.0,
+    "similarity": "adjusted_cosine",
+    "weight_mode": "learned",
+    "rank_mode": "rating"
+  },
+  "similarity_arm_best_val_rmse": 0.9211815870929806,
+  "learned_arm_best_val_rmse": 0.9180050338813767,
+  "learned_beats_similarity_on_rmse": true,
+  "selection_split": "validation"
+}

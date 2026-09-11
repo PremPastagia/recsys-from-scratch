@@ -1,0 +1,815 @@
+{
+  "target": {
+    "user_id": 643,
+    "internal_index": 642,
+    "roll": "23IM10049",
+    "mapping": "roll='23IM10049' -> digits='2310049' -> 2310049 mod 943 = 642 -> +1 -> user_id 643",
+    "n_visible": 101,
+    "n_hidden": 44,
+    "n_global_test": 41,
+    "n_relevant_heldout": 56
+  },
+  "metrics": [
+    {
+      "model": "UBCF",
+      "spec": "{'family': 'ubcf', 'k': 80, 'similarity': 'cosine', 'mean_center': False, 'min_support': 3, 'beta': 25.0, 'rank_mode': 'score'}",
+      "rmse": 0.6699822981612261,
+      "mae": 0.552562525375437,
+      "precision_at_10": 0.6,
+      "recall_at_10": 0.10714285714285714,
+      "hit_rate_at_10": 1.0,
+      "ndcg_at_10": 0.461568684742548,
+      "map_at_10": 0.2876984126984127,
+      "novelty": 2.0374807014762855,
+      "ild": 0.7690383676790715,
+      "mean_pop_rank": 0.018441403926234383,
+      "head_frac": 1.0,
+      "tail_frac": 0.0
+    },
+    {
+      "model": "IBCF",
+      "spec": "{'family': 'ibcf', 'k': 120, 'similarity': 'cosine', 'mean_center': True, 'center_by': 'item', 'min_support': 3, 'beta': 25.0, 'rank_mode': 'affinity'}",
+      "rmse": 0.6576468194139511,
+      "mae": 0.5382070629058379,
+      "precision_at_10": 0.7,
+      "recall_at_10": 0.125,
+      "hit_rate_at_10": 1.0,
+      "ndcg_at_10": 0.5747915663739763,
+      "map_at_10": 0.42642857142857143,
+      "novelty": 1.983495076967482,
+      "ild": 0.788133614323497,
+      "mean_pop_rank": 0.015823914336704343,
+      "head_frac": 1.0,
+      "tail_frac": 0.0
+    },
+    {
+      "model": "RegressionCF",
+      "spec": "{'family': 'regression', 'k': 40, 'lam': 3000.0, 'similarity': 'adjusted_cosine', 'weight_mode': 'learned', 'rank_mode': 'affinity'}",
+      "rmse": 0.6516496715710222,
+      "mae": 0.5370274777246931,
+      "precision_at_10": 0.6,
+      "recall_at_10": 0.10714285714285714,
+      "hit_rate_at_10": 1.0,
+      "ndcg_at_10": 0.6180396628416764,
+      "map_at_10": 0.4147619047619048,
+      "novelty": 2.308301436191649,
+      "ild": 0.78366567841168,
+      "mean_pop_rank": 0.03587150505651398,
+      "head_frac": 0.9,
+      "tail_frac": 0.0
+    },
+    {
+      "model": "SLIM",
+      "spec": "{'family': 'slim', 'l1': 0.5, 'l2': 50.0, 'threshold': 4.0, 'max_iter': 1500, 'rank_mode': 'score'}",
+      "rmse": 0.7636101668841401,
+      "mae": 0.639229254219888,
+      "precision_at_10": 0.5,
+      "recall_at_10": 0.08928571428571429,
+      "hit_rate_at_10": 1.0,
+      "ndcg_at_10": 0.5861163849908828,
+      "map_at_10": 0.37666666666666665,
+      "novelty": 2.236458187483313,
+      "ild": 0.7153949383104397,
+      "mean_pop_rank": 0.033729922665080306,
+      "head_frac": 1.0,
+      "tail_frac": 0.0
+    },
+    {
+      "model": "GraphRec",
+      "spec": "{'family': 'graph', 'method': 'path', 'max_path_len': 3, 'beta': 0.2, 'normalize': 'degree', 'threshold': 4.0}",
+      "rmse": 0.754842229846386,
+      "mae": 0.6426273384866719,
+      "precision_at_10": 0.5,
+      "recall_at_10": 0.08928571428571429,
+      "hit_rate_at_10": 1.0,
+      "ndcg_at_10": 0.44903378752009254,
+      "map_at_10": 0.2571428571428571,
+      "novelty": 1.8693832890269195,
+      "ild": 0.6887159059102448,
+      "mean_pop_rank": 0.012373587150505651,
+      "head_frac": 1.0,
+      "tail_frac": 0.0
+    }
+  ],
+  "consensus_items": [
+    {
+      "item": 55,
+      "title": "Pulp Fiction (1994)",
+      "n_models": 4,
+      "models": "UBCF, IBCF, SLIM, GraphRec",
+      "train_popularity": 287,
+      "group": "head",
+      "held_out_rating": 5.0
+    },
+    {
+      "item": 97,
+      "title": "Silence of the Lambs, The (1991)",
+      "n_models": 4,
+      "models": "UBCF, IBCF, SLIM, GraphRec",
+      "train_popularity": 275,
+      "group": "head",
+      "held_out_rating": NaN
+    },
+    {
+      "item": 171,
+      "title": "Empire Strikes Back, The (1980)",
+      "n_models": 4,
+      "models": "UBCF, IBCF, RegressionCF, GraphRec",
+      "train_popularity": 254,
+      "group": "head",
+      "held_out_rating": 5.0
+    },
+    {
+      "item": 172,
+      "title": "Princess Bride, The (1987)",
+      "n_models": 3,
+      "models": "UBCF, IBCF, GraphRec",
+      "train_popularity": 247,
+      "group": "head",
+      "held_out_rating": 4.0
+    },
+    {
+      "item": 167,
+      "title": "Monty Python and the Holy Grail (1974)",
+      "n_models": 3,
+      "models": "UBCF, IBCF, GraphRec",
+      "train_popularity": 218,
+      "group": "head",
+      "held_out_rating": 5.0
+    },
+    {
+      "item": 182,
+      "title": "Alien (1979)",
+      "n_models": 3,
+      "models": "UBCF, IBCF, RegressionCF",
+      "train_popularity": 206,
+      "group": "head",
+      "held_out_rating": 5.0
+    },
+    {
+      "item": 95,
+      "title": "Terminator 2: Judgment Day (1991)",
+      "n_models": 3,
+      "models": "UBCF, RegressionCF, SLIM",
+      "train_popularity": 202,
+      "group": "head",
+      "held_out_rating": 5.0
+    },
+    {
+      "item": 6,
+      "title": "Twelve Monkeys (1995)",
+      "n_models": 2,
+      "models": "SLIM, GraphRec",
+      "train_popularity": 286,
+      "group": "head",
+      "held_out_rating": 4.0
+    },
+    {
+      "item": 78,
+      "title": "Fugitive, The (1993)",
+      "n_models": 2,
+      "models": "IBCF, GraphRec",
+      "train_popularity": 256,
+      "group": "head",
+      "held_out_rating": NaN
+    },
+    {
+      "item": 209,
+      "title": "Indiana Jones and the Last Crusade (1989)",
+      "n_models": 2,
+      "models": "IBCF, RegressionCF",
+      "train_popularity": 232,
+      "group": "head",
+      "held_out_rating": 4.0
+    },
+    {
+      "item": 317,
+      "title": "Schindler's List (1993)",
+      "n_models": 2,
+      "models": "UBCF, GraphRec",
+      "train_popularity": 227,
+      "group": "head",
+      "held_out_rating": NaN
+    },
+    {
+      "item": 88,
+      "title": "Blade Runner (1982)",
+      "n_models": 2,
+      "models": "UBCF, IBCF",
+      "train_popularity": 201,
+      "group": "head",
+      "held_out_rating": 3.0
+    },
+    {
+      "item": 63,
+      "title": "Shawshank Redemption, The (1994)",
+      "n_models": 2,
+      "models": "UBCF, GraphRec",
+      "train_popularity": 193,
+      "group": "head",
+      "held_out_rating": NaN
+    },
+    {
+      "item": 184,
+      "title": "Psycho (1960)",
+      "n_models": 2,
+      "models": "RegressionCF, SLIM",
+      "train_popularity": 166,
+      "group": "head",
+      "held_out_rating": 5.0
+    },
+    {
+      "item": 179,
+      "title": "Apocalypse Now (1979)",
+      "n_models": 2,
+      "models": "RegressionCF, SLIM",
+      "train_popularity": 143,
+      "group": "head",
+      "held_out_rating": NaN
+    },
+    {
+      "item": 257,
+      "title": "Contact (1997)",
+      "n_models": 1,
+      "models": "GraphRec",
+      "train_popularity": 368,
+      "group": "head",
+      "held_out_rating": NaN
+    },
+    {
+      "item": 150,
+      "title": "Willy Wonka and the Chocolate Factory (1971)",
+      "n_models": 1,
+      "models": "RegressionCF",
+      "train_popularity": 242,
+      "group": "head",
+      "held_out_rating": NaN
+    },
+    {
+      "item": 68,
+      "title": "Forrest Gump (1994)",
+      "n_models": 1,
+      "models": "SLIM",
+      "train_popularity": 218,
+      "group": "head",
+      "held_out_rating": NaN
+    },
+    {
+      "item": 215,
+      "title": "When Harry Met Sally... (1989)",
+      "n_models": 1,
+      "models": "IBCF",
+      "train_popularity": 217,
+      "group": "head",
+      "held_out_rating": 4.0
+    },
+    {
+      "item": 134,
+      "title": "2001: A Space Odyssey (1968)",
+      "n_models": 1,
+      "models": "RegressionCF",
+      "train_popularity": 186,
+      "group": "head",
+      "held_out_rating": NaN
+    },
+    {
+      "item": 181,
+      "title": "GoodFellas (1990)",
+      "n_models": 1,
+      "models": "SLIM",
+      "train_popularity": 174,
+      "group": "head",
+      "held_out_rating": NaN
+    },
+    {
+      "item": 152,
+      "title": "Fish Called Wanda, A (1988)",
+      "n_models": 1,
+      "models": "RegressionCF",
+      "train_popularity": 172,
+      "group": "head",
+      "held_out_rating": 4.0
+    },
+    {
+      "item": 193,
+      "title": "Sting, The (1973)",
+      "n_models": 1,
+      "models": "SLIM",
+      "train_popularity": 166,
+      "group": "head",
+      "held_out_rating": 4.0
+    },
+    {
+      "item": 186,
+      "title": "Godfather: Part II, The (1974)",
+      "n_models": 1,
+      "models": "SLIM",
+      "train_popularity": 145,
+      "group": "head",
+      "held_out_rating": NaN
+    },
+    {
+      "item": 12,
+      "title": "Mighty Aphrodite (1995)",
+      "n_models": 1,
+      "models": "RegressionCF",
+      "train_popularity": 133,
+      "group": "medium",
+      "held_out_rating": NaN
+    }
+  ],
+  "disagreements": [
+    {
+      "item": 78,
+      "title": "Fugitive, The (1993)",
+      "train_popularity": 256,
+      "popularity_group": "head",
+      "recommended_by": [
+        "IBCF",
+        "GraphRec"
+      ],
+      "not_recommended_by": [
+        "UBCF",
+        "RegressionCF",
+        "SLIM"
+      ],
+      "held_out_rating": null,
+      "rank_by_model": {
+        "UBCF": null,
+        "IBCF": 1,
+        "RegressionCF": null,
+        "SLIM": null,
+        "GraphRec": 5
+      },
+      "score_percentile_by_model": {
+        "UBCF": 99.1144845034788,
+        "IBCF": 99.93674889310563,
+        "RegressionCF": 98.67172675521822,
+        "SLIM": 98.79822896900696,
+        "GraphRec": 99.68374446552815
+      },
+      "explanations": {
+        "IBCF": "most similar movies you already rated: 'Raiders of the Lost Ark (1981)' (you rated 4, sim=+0.545, 147 co-ratings) -> +0.545; 'Seven (Se7en) (1995)' (you rated 4, sim=+0.501, 113 co-ratings) -> +0.501; 'Jaws (1975)' (you rated 4, sim=+0.499, 119 co-ratings) -> +0.499",
+        "GraphRec": "strongest graph propagation paths: via 'Cape Fear (1962)' (19 length-3 paths, weight 1.37e-04); via 'Strange Days (1995)' (17 length-3 paths, weight 1.34e-04); via 'Raiders of the Lost Ark (1981)' (102 length-3 paths, weight 1.32e-04)"
+      }
+    },
+    {
+      "item": 184,
+      "title": "Psycho (1960)",
+      "train_popularity": 166,
+      "popularity_group": "head",
+      "recommended_by": [
+        "RegressionCF",
+        "SLIM"
+      ],
+      "not_recommended_by": [
+        "UBCF",
+        "IBCF",
+        "GraphRec"
+      ],
+      "held_out_rating": 5.0,
+      "rank_by_model": {
+        "UBCF": null,
+        "IBCF": null,
+        "RegressionCF": 4,
+        "SLIM": 1,
+        "GraphRec": null
+      },
+      "score_percentile_by_model": {
+        "UBCF": 98.79822896900696,
+        "IBCF": 98.292220113852,
+        "RegressionCF": 99.74699557242252,
+        "SLIM": 99.93674889310563,
+        "GraphRec": 98.60847564832385
+      },
+      "explanations": {
+        "RegressionCF": "strongest learned regression coefficients: 'Godfather, The (1972)' learned coef=+0.007 (similarity +0.227, you liked it) -> +0.007; 'Clockwork Orange, A (1971)' learned coef=+0.007 (similarity +0.229, you liked it) -> +0.007; 'Jaws (1975)' learned coef=+0.005 (similarity +0.151, you liked it) -> +0.005",
+        "SLIM": "strongest learned item-item coefficients from your liked items: 'Rear Window (1954)' W=0.0697; 'Treasure of the Sierra Madre, The (1948)' W=0.0642; 'Carrie (1976)' W=0.0608"
+      }
+    },
+    {
+      "item": 134,
+      "title": "2001: A Space Odyssey (1968)",
+      "train_popularity": 186,
+      "popularity_group": "head",
+      "recommended_by": [
+        "RegressionCF"
+      ],
+      "not_recommended_by": [
+        "UBCF",
+        "IBCF",
+        "SLIM",
+        "GraphRec"
+      ],
+      "held_out_rating": null,
+      "rank_by_model": {
+        "UBCF": null,
+        "IBCF": null,
+        "RegressionCF": 2,
+        "SLIM": null,
+        "GraphRec": null
+      },
+      "score_percentile_by_model": {
+        "UBCF": 98.10246679316889,
+        "IBCF": 98.60847564832385,
+        "RegressionCF": 99.87349778621126,
+        "SLIM": 96.3314358001265,
+        "GraphRec": 98.22896900695763
+      },
+      "explanations": {
+        "RegressionCF": "strongest learned regression coefficients: 'Clockwork Orange, A (1971)' learned coef=+0.011 (similarity +0.203, you liked it) -> +0.011; 'Star Wars (1977)' learned coef=+0.009 (similarity +0.193, you liked it) -> +0.009; 'Fargo (1996)' learned coef=+0.008 (similarity +0.159, you liked it) -> +0.008"
+      }
+    },
+    {
+      "item": 63,
+      "title": "Shawshank Redemption, The (1994)",
+      "train_popularity": 193,
+      "popularity_group": "head",
+      "recommended_by": [
+        "UBCF",
+        "GraphRec"
+      ],
+      "not_recommended_by": [
+        "IBCF",
+        "RegressionCF",
+        "SLIM"
+      ],
+      "held_out_rating": null,
+      "rank_by_model": {
+        "UBCF": 2,
+        "IBCF": null,
+        "RegressionCF": null,
+        "SLIM": null,
+        "GraphRec": 8
+      },
+      "score_percentile_by_model": {
+        "UBCF": 99.87349778621126,
+        "IBCF": 98.9247311827957,
+        "RegressionCF": 92.85262492093611,
+        "SLIM": 97.4067046173308,
+        "GraphRec": 99.49399114484504
+      },
+      "explanations": {
+        "UBCF": "strongest contributing neighbours: neighbour u292 (sim=+0.359, 56 co-ratings) rated it 5 vs their mean 3.10 -> +1.793; neighbour u193 (sim=+0.348, 52 co-ratings) rated it 5 vs their mean 3.00 -> +1.740; neighbour u532 (sim=+0.345, 43 co-ratings) rated it 5 vs their mean 3.49 -> +1.726",
+        "GraphRec": "strongest graph propagation paths: via 'Flirting With Disaster (1996)' (9 length-3 paths, weight 1.55e-04); via 'Searching for Bobby Fischer (1993)' (33 length-3 paths, weight 1.20e-04); via 'Wizard of Oz, The (1939)' (53 length-3 paths, weight 1.08e-04)"
+      }
+    },
+    {
+      "item": 181,
+      "title": "GoodFellas (1990)",
+      "train_popularity": 174,
+      "popularity_group": "head",
+      "recommended_by": [
+        "SLIM"
+      ],
+      "not_recommended_by": [
+        "UBCF",
+        "IBCF",
+        "RegressionCF",
+        "GraphRec"
+      ],
+      "held_out_rating": null,
+      "rank_by_model": {
+        "UBCF": null,
+        "IBCF": null,
+        "RegressionCF": null,
+        "SLIM": 4,
+        "GraphRec": null
+      },
+      "score_percentile_by_model": {
+        "UBCF": 99.30423782416192,
+        "IBCF": 99.1144845034788,
+        "RegressionCF": 97.78621125869704,
+        "SLIM": 99.74699557242252,
+        "GraphRec": 98.4819734345351
+      },
+      "explanations": {
+        "SLIM": "strongest learned item-item coefficients from your liked items: 'Usual Suspects, The (1995)' W=0.0643; 'Tombstone (1993)' W=0.0483; 'Bonnie and Clyde (1967)' W=0.0389"
+      }
+    }
+  ],
+  "recommendations": {
+    "UBCF": [
+      {
+        "rank": 1,
+        "item": 97,
+        "title": "Silence of the Lambs, The (1991)"
+      },
+      {
+        "rank": 2,
+        "item": 63,
+        "title": "Shawshank Redemption, The (1994)"
+      },
+      {
+        "rank": 3,
+        "item": 317,
+        "title": "Schindler's List (1993)"
+      },
+      {
+        "rank": 4,
+        "item": 172,
+        "title": "Princess Bride, The (1987)"
+      },
+      {
+        "rank": 5,
+        "item": 55,
+        "title": "Pulp Fiction (1994)"
+      },
+      {
+        "rank": 6,
+        "item": 171,
+        "title": "Empire Strikes Back, The (1980)"
+      },
+      {
+        "rank": 7,
+        "item": 167,
+        "title": "Monty Python and the Holy Grail (1974)"
+      },
+      {
+        "rank": 8,
+        "item": 88,
+        "title": "Blade Runner (1982)"
+      },
+      {
+        "rank": 9,
+        "item": 95,
+        "title": "Terminator 2: Judgment Day (1991)"
+      },
+      {
+        "rank": 10,
+        "item": 182,
+        "title": "Alien (1979)"
+      }
+    ],
+    "IBCF": [
+      {
+        "rank": 1,
+        "item": 78,
+        "title": "Fugitive, The (1993)"
+      },
+      {
+        "rank": 2,
+        "item": 97,
+        "title": "Silence of the Lambs, The (1991)"
+      },
+      {
+        "rank": 3,
+        "item": 55,
+        "title": "Pulp Fiction (1994)"
+      },
+      {
+        "rank": 4,
+        "item": 171,
+        "title": "Empire Strikes Back, The (1980)"
+      },
+      {
+        "rank": 5,
+        "item": 172,
+        "title": "Princess Bride, The (1987)"
+      },
+      {
+        "rank": 6,
+        "item": 209,
+        "title": "Indiana Jones and the Last Crusade (1989)"
+      },
+      {
+        "rank": 7,
+        "item": 167,
+        "title": "Monty Python and the Holy Grail (1974)"
+      },
+      {
+        "rank": 8,
+        "item": 182,
+        "title": "Alien (1979)"
+      },
+      {
+        "rank": 9,
+        "item": 88,
+        "title": "Blade Runner (1982)"
+      },
+      {
+        "rank": 10,
+        "item": 215,
+        "title": "When Harry Met Sally... (1989)"
+      }
+    ],
+    "RegressionCF": [
+      {
+        "rank": 1,
+        "item": 171,
+        "title": "Empire Strikes Back, The (1980)"
+      },
+      {
+        "rank": 2,
+        "item": 134,
+        "title": "2001: A Space Odyssey (1968)"
+      },
+      {
+        "rank": 3,
+        "item": 179,
+        "title": "Apocalypse Now (1979)"
+      },
+      {
+        "rank": 4,
+        "item": 184,
+        "title": "Psycho (1960)"
+      },
+      {
+        "rank": 5,
+        "item": 182,
+        "title": "Alien (1979)"
+      },
+      {
+        "rank": 6,
+        "item": 152,
+        "title": "Fish Called Wanda, A (1988)"
+      },
+      {
+        "rank": 7,
+        "item": 209,
+        "title": "Indiana Jones and the Last Crusade (1989)"
+      },
+      {
+        "rank": 8,
+        "item": 150,
+        "title": "Willy Wonka and the Chocolate Factory (1971)"
+      },
+      {
+        "rank": 9,
+        "item": 95,
+        "title": "Terminator 2: Judgment Day (1991)"
+      },
+      {
+        "rank": 10,
+        "item": 12,
+        "title": "Mighty Aphrodite (1995)"
+      }
+    ],
+    "SLIM": [
+      {
+        "rank": 1,
+        "item": 184,
+        "title": "Psycho (1960)"
+      },
+      {
+        "rank": 2,
+        "item": 55,
+        "title": "Pulp Fiction (1994)"
+      },
+      {
+        "rank": 3,
+        "item": 97,
+        "title": "Silence of the Lambs, The (1991)"
+      },
+      {
+        "rank": 4,
+        "item": 181,
+        "title": "GoodFellas (1990)"
+      },
+      {
+        "rank": 5,
+        "item": 193,
+        "title": "Sting, The (1973)"
+      },
+      {
+        "rank": 6,
+        "item": 95,
+        "title": "Terminator 2: Judgment Day (1991)"
+      },
+      {
+        "rank": 7,
+        "item": 68,
+        "title": "Forrest Gump (1994)"
+      },
+      {
+        "rank": 8,
+        "item": 179,
+        "title": "Apocalypse Now (1979)"
+      },
+      {
+        "rank": 9,
+        "item": 186,
+        "title": "Godfather: Part II, The (1974)"
+      },
+      {
+        "rank": 10,
+        "item": 6,
+        "title": "Twelve Monkeys (1995)"
+      }
+    ],
+    "GraphRec": [
+      {
+        "rank": 1,
+        "item": 97,
+        "title": "Silence of the Lambs, The (1991)"
+      },
+      {
+        "rank": 2,
+        "item": 55,
+        "title": "Pulp Fiction (1994)"
+      },
+      {
+        "rank": 3,
+        "item": 317,
+        "title": "Schindler's List (1993)"
+      },
+      {
+        "rank": 4,
+        "item": 171,
+        "title": "Empire Strikes Back, The (1980)"
+      },
+      {
+        "rank": 5,
+        "item": 78,
+        "title": "Fugitive, The (1993)"
+      },
+      {
+        "rank": 6,
+        "item": 172,
+        "title": "Princess Bride, The (1987)"
+      },
+      {
+        "rank": 7,
+        "item": 6,
+        "title": "Twelve Monkeys (1995)"
+      },
+      {
+        "rank": 8,
+        "item": 63,
+        "title": "Shawshank Redemption, The (1994)"
+      },
+      {
+        "rank": 9,
+        "item": 257,
+        "title": "Contact (1997)"
+      },
+      {
+        "rank": 10,
+        "item": 167,
+        "title": "Monty Python and the Holy Grail (1974)"
+      }
+    ]
+  },
+  "explanations": {
+    "UBCF": {
+      "97": "strongest contributing neighbours: neighbour u212 (sim=+0.336, 30 co-ratings) rated it 5 vs their mean 4.27 -> +1.681; neighbour u434 (sim=+0.331, 55 co-ratings) rated it 5 vs their mean 3.33 -> +1.657; neighbour u932 (sim=+0.326, 34 co-ratings) rated it 5 vs their mean 2.68 -> +1.631",
+      "63": "strongest contributing neighbours: neighbour u292 (sim=+0.359, 56 co-ratings) rated it 5 vs their mean 3.10 -> +1.793; neighbour u193 (sim=+0.348, 52 co-ratings) rated it 5 vs their mean 3.00 -> +1.740; neighbour u532 (sim=+0.345, 43 co-ratings) rated it 5 vs their mean 3.49 -> +1.726",
+      "317": "strongest contributing neighbours: neighbour u532 (sim=+0.345, 43 co-ratings) rated it 5 vs their mean 3.49 -> +1.726; neighbour u212 (sim=+0.336, 30 co-ratings) rated it 5 vs their mean 4.27 -> +1.681; neighbour u434 (sim=+0.331, 55 co-ratings) rated it 5 vs their mean 3.33 -> +1.657",
+      "172": "strongest contributing neighbours: neighbour u292 (sim=+0.359, 56 co-ratings) rated it 5 vs their mean 3.10 -> +1.793; neighbour u193 (sim=+0.348, 52 co-ratings) rated it 5 vs their mean 3.00 -> +1.740; neighbour u434 (sim=+0.331, 55 co-ratings) rated it 5 vs their mean 3.33 -> +1.657",
+      "55": "strongest contributing neighbours: neighbour u212 (sim=+0.336, 30 co-ratings) rated it 5 vs their mean 4.27 -> +1.681; neighbour u434 (sim=+0.331, 55 co-ratings) rated it 5 vs their mean 3.33 -> +1.657; neighbour u307 (sim=+0.331, 53 co-ratings) rated it 5 vs their mean 3.76 -> +1.657",
+      "171": "strongest contributing neighbours: neighbour u292 (sim=+0.359, 56 co-ratings) rated it 5 vs their mean 3.10 -> +1.793; neighbour u428 (sim=+0.333, 55 co-ratings) rated it 5 vs their mean 3.38 -> +1.664; neighbour u434 (sim=+0.331, 55 co-ratings) rated it 5 vs their mean 3.33 -> +1.657",
+      "167": "strongest contributing neighbours: neighbour u434 (sim=+0.331, 55 co-ratings) rated it 5 vs their mean 3.33 -> +1.657; neighbour u803 (sim=+0.320, 47 co-ratings) rated it 5 vs their mean 3.67 -> +1.599; neighbour u406 (sim=+0.309, 38 co-ratings) rated it 5 vs their mean 3.52 -> +1.545",
+      "88": "strongest contributing neighbours: neighbour u292 (sim=+0.359, 56 co-ratings) rated it 5 vs their mean 3.10 -> +1.793; neighbour u58 (sim=+0.326, 50 co-ratings) rated it 5 vs their mean 3.95 -> +1.628; neighbour u891 (sim=+0.310, 37 co-ratings) rated it 5 vs their mean 4.03 -> +1.550",
+      "95": "strongest contributing neighbours: neighbour u434 (sim=+0.331, 55 co-ratings) rated it 5 vs their mean 3.33 -> +1.657; neighbour u58 (sim=+0.326, 50 co-ratings) rated it 5 vs their mean 3.95 -> +1.628; neighbour u803 (sim=+0.320, 47 co-ratings) rated it 5 vs their mean 3.67 -> +1.599",
+      "182": "strongest contributing neighbours: neighbour u58 (sim=+0.326, 50 co-ratings) rated it 5 vs their mean 3.95 -> +1.628; neighbour u405 (sim=+0.315, 46 co-ratings) rated it 5 vs their mean 3.52 -> +1.577; neighbour u591 (sim=+0.303, 43 co-ratings) rated it 5 vs their mean 3.83 -> +1.513"
+    },
+    "IBCF": {
+      "78": "most similar movies you already rated: 'Raiders of the Lost Ark (1981)' (you rated 4, sim=+0.545, 147 co-ratings) -> +0.545; 'Seven (Se7en) (1995)' (you rated 4, sim=+0.501, 113 co-ratings) -> +0.501; 'Jaws (1975)' (you rated 4, sim=+0.499, 119 co-ratings) -> +0.499",
+      "97": "most similar movies you already rated: 'Raiders of the Lost Ark (1981)' (you rated 4, sim=+0.520, 147 co-ratings) -> +0.520; 'Jaws (1975)' (you rated 4, sim=+0.512, 127 co-ratings) -> +0.512; 'Star Wars (1977)' (you rated 4, sim=+0.487, 174 co-ratings) -> +0.487",
+      "55": "most similar movies you already rated: 'Terminator, The (1984)' (you rated 5, sim=+0.486, 123 co-ratings) -> +0.486; 'Raiders of the Lost Ark (1981)' (you rated 4, sim=+0.485, 143 co-ratings) -> +0.485; 'Fargo (1996)' (you rated 5, sim=+0.480, 153 co-ratings) -> +0.480",
+      "171": "most similar movies you already rated: 'Raiders of the Lost Ark (1981)' (you rated 4, sim=+0.532, 146 co-ratings) -> +0.532; 'E.T. the Extra-Terrestrial (1982)' (you rated 4, sim=+0.502, 120 co-ratings) -> +0.502; 'Terminator, The (1984)' (you rated 5, sim=+0.499, 119 co-ratings) -> +0.499",
+      "172": "most similar movies you already rated: 'Raiders of the Lost Ark (1981)' (you rated 4, sim=+0.503, 134 co-ratings) -> +0.503; 'Star Wars (1977)' (you rated 4, sim=+0.496, 157 co-ratings) -> +0.496; 'E.T. the Extra-Terrestrial (1982)' (you rated 4, sim=+0.475, 116 co-ratings) -> +0.475",
+      "209": "most similar movies you already rated: 'Terminator, The (1984)' (you rated 5, sim=+0.513, 114 co-ratings) -> +0.513; 'Raiders of the Lost Ark (1981)' (you rated 4, sim=+0.510, 129 co-ratings) -> +0.510; 'Star Wars (1977)' (you rated 4, sim=+0.481, 149 co-ratings) -> +0.481",
+      "167": "most similar movies you already rated: 'Apollo 13 (1995)' (you rated 4, sim=+0.493, 103 co-ratings) -> +0.493; 'Raiders of the Lost Ark (1981)' (you rated 4, sim=+0.493, 123 co-ratings) -> +0.493; 'Terminator, The (1984)' (you rated 5, sim=+0.492, 103 co-ratings) -> +0.492",
+      "182": "most similar movies you already rated: 'Jaws (1975)' (you rated 4, sim=+0.495, 102 co-ratings) -> +0.495; 'Terminator, The (1984)' (you rated 5, sim=+0.470, 102 co-ratings) -> +0.470; 'Raiders of the Lost Ark (1981)' (you rated 4, sim=+0.468, 117 co-ratings) -> +0.468",
+      "88": "most similar movies you already rated: 'Terminator, The (1984)' (you rated 5, sim=+0.484, 99 co-ratings) -> +0.484; 'Raiders of the Lost Ark (1981)' (you rated 4, sim=+0.477, 118 co-ratings) -> +0.477; 'Jaws (1975)' (you rated 4, sim=+0.460, 99 co-ratings) -> +0.460",
+      "215": "most similar movies you already rated: 'E.T. the Extra-Terrestrial (1982)' (you rated 4, sim=+0.477, 106 co-ratings) -> +0.477; 'Raiders of the Lost Ark (1981)' (you rated 4, sim=+0.459, 120 co-ratings) -> +0.459; 'Die Hard (1988)' (you rated 4, sim=+0.454, 91 co-ratings) -> +0.454"
+    },
+    "RegressionCF": {
+      "171": "strongest learned regression coefficients: 'Star Wars (1977)' learned coef=+0.026 (similarity +0.408, you liked it) -> +0.026; 'Raiders of the Lost Ark (1981)' learned coef=+0.014 (similarity +0.340, you liked it) -> +0.014; 'Jaws (1975)' learned coef=+0.008 (similarity +0.165, you liked it) -> +0.008",
+      "134": "strongest learned regression coefficients: 'Clockwork Orange, A (1971)' learned coef=+0.011 (similarity +0.203, you liked it) -> +0.011; 'Star Wars (1977)' learned coef=+0.009 (similarity +0.193, you liked it) -> +0.009; 'Fargo (1996)' learned coef=+0.008 (similarity +0.159, you liked it) -> +0.008",
+      "179": "strongest learned regression coefficients: 'Unforgiven (1992)' learned coef=+0.006 (similarity +0.176, you liked it) -> +0.006; 'Godfather, The (1972)' learned coef=+0.006 (similarity +0.217, you liked it) -> +0.006; 'Clockwork Orange, A (1971)' learned coef=+0.005 (similarity +0.150, you liked it) -> +0.005",
+      "184": "strongest learned regression coefficients: 'Godfather, The (1972)' learned coef=+0.007 (similarity +0.227, you liked it) -> +0.007; 'Clockwork Orange, A (1971)' learned coef=+0.007 (similarity +0.229, you liked it) -> +0.007; 'Jaws (1975)' learned coef=+0.005 (similarity +0.151, you liked it) -> +0.005",
+      "182": "strongest learned regression coefficients: 'Terminator, The (1984)' learned coef=+0.009 (similarity +0.236, you liked it) -> +0.009; 'Jaws (1975)' learned coef=+0.008 (similarity +0.204, you liked it) -> +0.008; 'Clockwork Orange, A (1971)' learned coef=+0.007 (similarity +0.190, you liked it) -> +0.007",
+      "152": "strongest learned regression coefficients: 'Clockwork Orange, A (1971)' learned coef=+0.005 (similarity +0.114, you liked it) -> +0.005; 'Star Wars (1977)' learned coef=+0.005 (similarity +0.108, you liked it) -> +0.005; 'Fargo (1996)' learned coef=+0.004 (similarity +0.112, you liked it) -> +0.004",
+      "209": "strongest learned regression coefficients: 'Raiders of the Lost Ark (1981)' learned coef=+0.010 (similarity +0.305, you liked it) -> +0.010; 'Star Wars (1977)' learned coef=+0.010 (similarity +0.259, you liked it) -> +0.010; 'Apollo 13 (1995)' learned coef=+0.005 (similarity +0.255, you liked it) -> +0.005",
+      "150": "strongest learned regression coefficients: 'Jaws (1975)' learned coef=+0.008 (similarity +0.106, you liked it) -> +0.008; 'E.T. the Extra-Terrestrial (1982)' learned coef=+0.006 (similarity +0.068, you liked it) -> +0.006; 'Young Frankenstein (1974)' learned coef=+0.005 (similarity +0.103, you liked it) -> +0.005",
+      "95": "strongest learned regression coefficients: 'Terminator, The (1984)' learned coef=+0.013 (similarity +0.323, you liked it) -> +0.013; 'Raiders of the Lost Ark (1981)' learned coef=+0.008 (similarity +0.240, you liked it) -> +0.008; 'Die Hard (1988)' learned coef=+0.007 (similarity +0.200, you liked it) -> +0.007",
+      "12": "strongest learned regression coefficients: 'E.T. the Extra-Terrestrial (1982)' learned coef=+0.008 (similarity +0.127, you liked it) -> +0.008; 'Leaving Las Vegas (1995)' learned coef=+0.007 (similarity +0.095, you liked it) -> +0.007; 'People vs. Larry Flynt, The (1996)' learned coef=+0.005 (similarity +0.104, you liked it) -> +0.005"
+    },
+    "SLIM": {
+      "184": "strongest learned item-item coefficients from your liked items: 'Rear Window (1954)' W=0.0697; 'Treasure of the Sierra Madre, The (1948)' W=0.0642; 'Carrie (1976)' W=0.0608",
+      "55": "strongest learned item-item coefficients from your liked items: 'Reservoir Dogs (1992)' W=0.0590; 'Fargo (1996)' W=0.0414; 'Usual Suspects, The (1995)' W=0.0386",
+      "97": "strongest learned item-item coefficients from your liked items: 'Reservoir Dogs (1992)' W=0.0505; 'Usual Suspects, The (1995)' W=0.0369; 'Bonnie and Clyde (1967)' W=0.0339",
+      "181": "strongest learned item-item coefficients from your liked items: 'Usual Suspects, The (1995)' W=0.0643; 'Tombstone (1993)' W=0.0483; 'Bonnie and Clyde (1967)' W=0.0389",
+      "193": "strongest learned item-item coefficients from your liked items: 'Butch Cassidy and the Sundance Kid (1969)' W=0.0762; 'Wizard of Oz, The (1939)' W=0.0542; 'Reservoir Dogs (1992)' W=0.0354",
+      "95": "strongest learned item-item coefficients from your liked items: 'Terminator, The (1984)' W=0.0758; 'Die Hard (1988)' W=0.0388; 'Craft, The (1996)' W=0.0370",
+      "68": "strongest learned item-item coefficients from your liked items: 'Apollo 13 (1995)' W=0.0779; 'Tombstone (1993)' W=0.0496; 'Cape Fear (1962)' W=0.0446",
+      "179": "strongest learned item-item coefficients from your liked items: 'Good, The Bad and The Ugly, The (1966)' W=0.0556; 'Deer Hunter, The (1978)' W=0.0383; 'Treasure of the Sierra Madre, The (1948)' W=0.0299",
+      "186": "strongest learned item-item coefficients from your liked items: 'Good, The Bad and The Ugly, The (1966)' W=0.0762; 'Godfather, The (1972)' W=0.0749; 'Bonnie and Clyde (1967)' W=0.0493",
+      "6": "strongest learned item-item coefficients from your liked items: 'Beavis and Butt-head Do America (1996)' W=0.0663; 'Toy Story (1995)' W=0.0458; 'Rumble in the Bronx (1995)' W=0.0449"
+    },
+    "GraphRec": {
+      "97": "strongest graph propagation paths: via 'Carrie (1976)' (29 length-3 paths, weight 1.73e-04); via 'Bonnie and Clyde (1967)' (34 length-3 paths, weight 1.55e-04); via 'Tombstone (1993)' (28 length-3 paths, weight 1.53e-04)",
+      "55": "strongest graph propagation paths: via 'Reservoir Dogs (1992)' (50 length-3 paths, weight 1.66e-04); via 'Strange Days (1995)' (17 length-3 paths, weight 1.57e-04); via 'Flirting With Disaster (1996)' (10 length-3 paths, weight 1.43e-04)",
+      "317": "strongest graph propagation paths: via 'Searching for Bobby Fischer (1993)' (43 length-3 paths, weight 1.65e-04); via 'Flirting With Disaster (1996)' (8 length-3 paths, weight 1.44e-04); via 'Cape Fear (1962)' (17 length-3 paths, weight 1.41e-04)",
+      "171": "strongest graph propagation paths: via 'Raiders of the Lost Ark (1981)' (101 length-3 paths, weight 1.33e-04); via 'Strange Days (1995)' (15 length-3 paths, weight 1.30e-04); via 'E.T. the Extra-Terrestrial (1982)' (65 length-3 paths, weight 1.28e-04)",
+      "78": "strongest graph propagation paths: via 'Cape Fear (1962)' (19 length-3 paths, weight 1.37e-04); via 'Strange Days (1995)' (17 length-3 paths, weight 1.34e-04); via 'Raiders of the Lost Ark (1981)' (102 length-3 paths, weight 1.32e-04)",
+      "172": "strongest graph propagation paths: via 'Arsenic and Old Lace (1944)' (31 length-3 paths, weight 1.23e-04); via 'Pinocchio (1940)' (26 length-3 paths, weight 1.13e-04); via 'Clockwork Orange, A (1971)' (50 length-3 paths, weight 1.13e-04)",
+      "6": "strongest graph propagation paths: via 'Rumble in the Bronx (1995)' (35 length-3 paths, weight 1.75e-04); via 'Swingers (1996)' (31 length-3 paths, weight 1.67e-04); via 'Beavis and Butt-head Do America (1996)' (18 length-3 paths, weight 1.66e-04)",
+      "63": "strongest graph propagation paths: via 'Flirting With Disaster (1996)' (9 length-3 paths, weight 1.55e-04); via 'Searching for Bobby Fischer (1993)' (33 length-3 paths, weight 1.20e-04); via 'Wizard of Oz, The (1939)' (53 length-3 paths, weight 1.08e-04)",
+      "257": "strongest graph propagation paths: via 'Star Wars (1977)' (114 length-3 paths, weight 1.56e-04); via 'Independence Day (ID4) (1996)' (54 length-3 paths, weight 1.32e-04); via 'Godfather, The (1972)' (71 length-3 paths, weight 1.28e-04)",
+      "167": "strongest graph propagation paths: via 'Sleeper (1973)' (19 length-3 paths, weight 1.23e-04); via 'Terminator, The (1984)' (69 length-3 paths, weight 1.21e-04); via 'Apartment, The (1960)' (15 length-3 paths, weight 1.18e-04)"
+    }
+  }
+}

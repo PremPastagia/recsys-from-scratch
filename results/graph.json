@@ -1,0 +1,93 @@
+{
+  "ranking_selected": {
+    "family": "graph",
+    "method": "path",
+    "max_path_len": 3,
+    "beta": 0.2,
+    "normalize": "degree",
+    "threshold": 4.0
+  },
+  "rating_selected": {
+    "family": "graph",
+    "method": "path",
+    "max_path_len": 3,
+    "beta": 0.2,
+    "normalize": "degree",
+    "threshold": 4.0
+  },
+  "best_rwr": {
+    "alpha": 0.95,
+    "val_ndcg": 0.17485164616571144
+  },
+  "best_path": {
+    "L": 3,
+    "beta": 0.2,
+    "normalize": "degree",
+    "val_ndcg": 0.174954525703182
+  },
+  "depth_vs_popularity": {
+    "corr_depth_pop_rank": -0.7096515519542955,
+    "corr_depth_head_frac": 0.7165966335063626,
+    "corr_depth_novelty": -0.7127731581069074,
+    "curve": [
+      {
+        "max_path_len": 1,
+        "ndcg_mean": 0.0010984261258022126,
+        "pop_rank_mean": 0.629467638752119,
+        "head_frac_mean": 0.0,
+        "tail_frac_mean": 0.999575821845175,
+        "novelty_mean": 6.648970134393878,
+        "catalog_coverage": 0.11117717003567182
+      },
+      {
+        "max_path_len": 3,
+        "ndcg_mean": 0.174954525703182,
+        "pop_rank_mean": 0.017482019426148278,
+        "head_frac_mean": 0.9393425238600212,
+        "tail_frac_mean": 0.002120890774125133,
+        "novelty_mean": 1.8402544216491785,
+        "catalog_coverage": 0.07966706302021404
+      },
+      {
+        "max_path_len": 5,
+        "ndcg_mean": 0.169372233704288,
+        "pop_rank_mean": 0.01571837447159098,
+        "head_frac_mean": 0.9492046659597031,
+        "tail_frac_mean": 0.0018822905620360557,
+        "novelty_mean": 1.8090799425399724,
+        "catalog_coverage": 0.07223543400713436
+      },
+      {
+        "max_path_len": 7,
+        "ndcg_mean": 0.1667452895349443,
+        "pop_rank_mean": 0.01505275731571686,
+        "head_frac_mean": 0.9534994697773065,
+        "tail_frac_mean": 0.0017762460233297988,
+        "novelty_mean": 1.7971077870037813,
+        "catalog_coverage": 0.06985731272294887
+      },
+      {
+        "max_path_len": 9,
+        "ndcg_mean": 0.16539538865692302,
+        "pop_rank_mean": 0.014740238193319004,
+        "head_frac_mean": 0.9553287380699894,
+        "tail_frac_mean": 0.0016702014846235423,
+        "novelty_mean": 1.7917926011369745,
+        "catalog_coverage": 0.06866825208085613
+      }
+    ],
+    "interpretation": "pop_rank is the mean normalised popularity rank of the Top-10 (0 = the single most-rated movie in the catalogue, 1 = the least). A NEGATIVE correlation between path length and pop_rank therefore means deeper propagation drifts toward MORE popular items, which is the predicted behaviour: as walks lengthen, the distribution over nodes converges to the degree-proportional stationary distribution, i.e. to raw popularity."
+  },
+  "restart_vs_popularity": {
+    "corr_alpha_pop_rank": 0.9730857602667601,
+    "corr_alpha_novelty": 0.9732573165384034,
+    "corr_alpha_coverage": 0.9387065218575674,
+    "interpretation": "A LARGER alpha restarts more often, keeps the walk local to the seed user, and should raise novelty / coverage; a small alpha lets the walk wander to the global stationary (degree) distribution."
+  },
+  "probability_mass_check": {
+    "min_over_configs": 0.9999999999999988,
+    "max_over_configs": 1.0000000000000013
+  },
+  "selection_split": "validation",
+  "rating_head_note": "The graph models are rankers; their score -> rating map is a two-parameter least-squares calibration on log1p(score), fitted on the VALIDATION split so that it is estimated under the same conditions it is applied in. Their validation RMSE is therefore in-sample for those two parameters; the TEST RMSE in Part H is out-of-sample, and no selection uses graph RMSE."
+}

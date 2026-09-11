@@ -1,0 +1,51 @@
+model,rank,item,title,train_popularity,popularity_group,held_out_rating,is_hit
+UBCF,1,97,"Silence of the Lambs, The (1991)",275,head,,False
+UBCF,2,63,"Shawshank Redemption, The (1994)",193,head,,False
+UBCF,3,317,Schindler's List (1993),227,head,,False
+UBCF,4,172,"Princess Bride, The (1987)",247,head,4.0,True
+UBCF,5,55,Pulp Fiction (1994),287,head,5.0,True
+UBCF,6,171,"Empire Strikes Back, The (1980)",254,head,5.0,True
+UBCF,7,167,Monty Python and the Holy Grail (1974),218,head,5.0,True
+UBCF,8,88,Blade Runner (1982),201,head,3.0,False
+UBCF,9,95,Terminator 2: Judgment Day (1991),202,head,5.0,True
+UBCF,10,182,Alien (1979),206,head,5.0,True
+IBCF,1,78,"Fugitive, The (1993)",256,head,,False
+IBCF,2,97,"Silence of the Lambs, The (1991)",275,head,,False
+IBCF,3,55,Pulp Fiction (1994),287,head,5.0,True
+IBCF,4,171,"Empire Strikes Back, The (1980)",254,head,5.0,True
+IBCF,5,172,"Princess Bride, The (1987)",247,head,4.0,True
+IBCF,6,209,Indiana Jones and the Last Crusade (1989),232,head,4.0,True
+IBCF,7,167,Monty Python and the Holy Grail (1974),218,head,5.0,True
+IBCF,8,182,Alien (1979),206,head,5.0,True
+IBCF,9,88,Blade Runner (1982),201,head,3.0,False
+IBCF,10,215,When Harry Met Sally... (1989),217,head,4.0,True
+RegressionCF,1,171,"Empire Strikes Back, The (1980)",254,head,5.0,True
+RegressionCF,2,134,2001: A Space Odyssey (1968),186,head,,False
+RegressionCF,3,179,Apocalypse Now (1979),143,head,,False
+RegressionCF,4,184,Psycho (1960),166,head,5.0,True
+RegressionCF,5,182,Alien (1979),206,head,5.0,True
+RegressionCF,6,152,"Fish Called Wanda, A (1988)",172,head,4.0,True
+RegressionCF,7,209,Indiana Jones and the Last Crusade (1989),232,head,4.0,True
+RegressionCF,8,150,Willy Wonka and the Chocolate Factory (1971),242,head,,False
+RegressionCF,9,95,Terminator 2: Judgment Day (1991),202,head,5.0,True
+RegressionCF,10,12,Mighty Aphrodite (1995),133,medium,,False
+SLIM,1,184,Psycho (1960),166,head,5.0,True
+SLIM,2,55,Pulp Fiction (1994),287,head,5.0,True
+SLIM,3,97,"Silence of the Lambs, The (1991)",275,head,,False
+SLIM,4,181,GoodFellas (1990),174,head,,False
+SLIM,5,193,"Sting, The (1973)",166,head,4.0,True
+SLIM,6,95,Terminator 2: Judgment Day (1991),202,head,5.0,True
+SLIM,7,68,Forrest Gump (1994),218,head,,False
+SLIM,8,179,Apocalypse Now (1979),143,head,,False
+SLIM,9,186,"Godfather: Part II, The (1974)",145,head,,False
+SLIM,10,6,Twelve Monkeys (1995),286,head,4.0,True
+GraphRec,1,97,"Silence of the Lambs, The (1991)",275,head,,False
+GraphRec,2,55,Pulp Fiction (1994),287,head,5.0,True
+GraphRec,3,317,Schindler's List (1993),227,head,,False
+GraphRec,4,171,"Empire Strikes Back, The (1980)",254,head,5.0,True
+GraphRec,5,78,"Fugitive, The (1993)",256,head,,False
+GraphRec,6,172,"Princess Bride, The (1987)",247,head,4.0,True
+GraphRec,7,6,Twelve Monkeys (1995),286,head,4.0,True
+GraphRec,8,63,"Shawshank Redemption, The (1994)",193,head,,False
+GraphRec,9,257,Contact (1997),368,head,,False
+GraphRec,10,167,Monty Python and the Holy Grail (1974),218,head,5.0,True

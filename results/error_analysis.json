@@ -1,0 +1,698 @@
+{
+  "best_rating_model_among_paradigms": "IBCF",
+  "overall": {
+    "Random": {
+      "rmse": 1.1203114295044765,
+      "mae": 0.9404231149289427,
+      "bias": 0.004847968219101705
+    },
+    "GlobalMean": {
+      "rmse": 1.1203114295044765,
+      "mae": 0.9404231149289427,
+      "bias": 0.004847968219101705
+    },
+    "UserMean": {
+      "rmse": 1.0411582598708151,
+      "mae": 0.8338520187103383,
+      "bias": 0.003296465490703848
+    },
+    "ItemMean": {
+      "rmse": 1.0231415780939983,
+      "mae": 0.8153434872827631,
+      "bias": 0.004119587565126576
+    },
+    "BiasBaseline": {
+      "rmse": 0.9437945818238221,
+      "mae": 0.7485067777114399,
+      "bias": 0.010542022770848768
+    },
+    "Popularity": {
+      "rmse": 1.0231415780939983,
+      "mae": 0.8153434872827631,
+      "bias": 0.004119587565126576
+    },
+    "PopularityPositive": {
+      "rmse": 1.0231415780939983,
+      "mae": 0.8153434872827631,
+      "bias": 0.004119587565126576
+    },
+    "UBCF": {
+      "rmse": 1.0150561513670293,
+      "mae": 0.8066938563407922,
+      "bias": 0.00623729913517539
+    },
+    "UBCF-rating": {
+      "rmse": 0.9467881493901374,
+      "mae": 0.7396481287301494,
+      "bias": 0.054265877781935354
+    },
+    "IBCF": {
+      "rmse": 0.940217594634003,
+      "mae": 0.7380339054727872,
+      "bias": 0.009696309652597112
+    },
+    "IBCF-rating": {
+      "rmse": 0.9286790983026721,
+      "mae": 0.72603478897658,
+      "bias": 0.019484279967299154
+    },
+    "RegressionCF": {
+      "rmse": 0.9407811246701672,
+      "mae": 0.745809672726814,
+      "bias": 0.0123728889020773
+    },
+    "RegressionCF-rating": {
+      "rmse": 0.9191158951419421,
+      "mae": 0.7245837478686756,
+      "bias": 0.03744923947013257
+    },
+    "SLIM": {
+      "rmse": 1.033116819337373,
+      "mae": 0.832681768140772,
+      "bias": -0.007208390649517586
+    },
+    "GraphRec": {
+      "rmse": 1.0724670333173365,
+      "mae": 0.869846662743739,
+      "bias": 0.005737415681531121
+    }
+  },
+  "regression_to_the_mean": {
+    "UBCF": {
+      "1": {
+        "bias": 2.0096500915181297,
+        "rmse": 2.119361460937289,
+        "n": 1163
+      },
+      "2": {
+        "bias": 1.2021858982490543,
+        "rmse": 1.3248791326766407,
+        "n": 2283
+      },
+      "3": {
+        "bias": 0.41175747537167273,
+        "rmse": 0.6597605156615443,
+        "n": 5350
+      },
+      "4": {
+        "bias": -0.36080574247800257,
+        "rmse": 0.5966006090446194,
+        "n": 6736
+      },
+      "5": {
+        "bias": -1.1538335967139481,
+        "rmse": 1.236595212580078,
+        "n": 4101
+      }
+    },
+    "IBCF": {
+      "1": {
+        "bias": 1.749312943461017,
+        "rmse": 1.9045095779487964,
+        "n": 1163
+      },
+      "2": {
+        "bias": 1.055631419048986,
+        "rmse": 1.2205479889458515,
+        "n": 2283
+      },
+      "3": {
+        "bias": 0.35546651169518445,
+        "rmse": 0.6544141312532704,
+        "n": 5350
+      },
+      "4": {
+        "bias": -0.3109979758176271,
+        "rmse": 0.5934055015402253,
+        "n": 6736
+      },
+      "5": {
+        "bias": -0.9902348958757033,
+        "rmse": 1.112230514817749,
+        "n": 4101
+      }
+    },
+    "RegressionCF": {
+      "1": {
+        "bias": 1.8232028722148053,
+        "rmse": 1.9476129371480704,
+        "n": 1163
+      },
+      "2": {
+        "bias": 1.1385779548934087,
+        "rmse": 1.2549755356397476,
+        "n": 2283
+      },
+      "3": {
+        "bias": 0.38344765888196286,
+        "rmse": 0.6092116343671355,
+        "n": 5350
+      },
+      "4": {
+        "bias": -0.3308274813368032,
+        "rmse": 0.5534655626351392,
+        "n": 6736
+      },
+      "5": {
+        "bias": -1.0484839171730753,
+        "rmse": 1.1390136683839933,
+        "n": 4101
+      }
+    },
+    "SLIM": {
+      "1": {
+        "bias": 2.2208202631434593,
+        "rmse": 2.23250563592995,
+        "n": 1163
+      },
+      "2": {
+        "bias": 1.3006052209575918,
+        "rmse": 1.3297612579030824,
+        "n": 2283
+      },
+      "3": {
+        "bias": 0.4125515059444392,
+        "rmse": 0.5252151285258734,
+        "n": 5350
+      },
+      "4": {
+        "bias": -0.4144900656723353,
+        "rmse": 0.58351803327197,
+        "n": 6736
+      },
+      "5": {
+        "bias": -1.2457360384145093,
+        "rmse": 1.3389387172362361,
+        "n": 4101
+      }
+    },
+    "GraphRec": {
+      "1": {
+        "bias": 2.3271927938108696,
+        "rmse": 2.3471830936969584,
+        "n": 1163
+      },
+      "2": {
+        "bias": 1.3869639917575003,
+        "rmse": 1.4211075800411823,
+        "n": 2283
+      },
+      "3": {
+        "bias": 0.465793142006776,
+        "rmse": 0.5711955915553037,
+        "n": 5350
+      },
+      "4": {
+        "bias": -0.42004217363168395,
+        "rmse": 0.5520050148910661,
+        "n": 6736
+      },
+      "5": {
+        "bias": -1.3223385902126659,
+        "rmse": 1.3760810903204683,
+        "n": 4101
+      }
+    }
+  },
+  "by_item_group": {
+    "head": {
+      "BiasBaseline": 0.9220771650332459,
+      "GlobalMean": 1.063680523356706,
+      "GraphRec": 1.0238236252735242,
+      "IBCF": 0.9031596989442673,
+      "IBCF-rating": 0.8774850807408859,
+      "ItemMean": 0.9727662570179471,
+      "Popularity": 0.9727662570179471,
+      "PopularityPositive": 0.9727662570179471,
+      "Random": 1.063680523356706,
+      "RegressionCF": 0.9164649426042188,
+      "RegressionCF-rating": 0.8841429469759015,
+      "SLIM": 0.9735413089488765,
+      "UBCF": 0.9578593981834763,
+      "UBCF-rating": 0.9235017124506603,
+      "UserMean": 1.0261915030671414
+    },
+    "long_tail": {
+      "BiasBaseline": 0.9756976354128681,
+      "GlobalMean": 1.2109938008220755,
+      "GraphRec": 1.1392544349657097,
+      "IBCF": 0.9945198597159531,
+      "IBCF-rating": 0.9963377040970357,
+      "ItemMean": 1.0858241941402074,
+      "Popularity": 1.0858241941402074,
+      "PopularityPositive": 1.0858241941402074,
+      "Random": 1.2109938008220755,
+      "RegressionCF": 0.9747628491567099,
+      "RegressionCF-rating": 0.965021714391317,
+      "SLIM": 1.1132850194578767,
+      "UBCF": 1.0824318768217478,
+      "UBCF-rating": 0.982728300070399,
+      "UserMean": 1.0883184349009605
+    },
+    "medium": {
+      "BiasBaseline": 0.9317003420698666,
+      "GlobalMean": 1.0775398909919842,
+      "GraphRec": 1.0486005801953655,
+      "IBCF": 0.9186532623749533,
+      "IBCF-rating": 0.9056953457939313,
+      "ItemMean": 1.0052407988878862,
+      "Popularity": 1.0052407988878862,
+      "PopularityPositive": 1.0052407988878862,
+      "Random": 1.0775398909919842,
+      "RegressionCF": 0.9289672114591669,
+      "RegressionCF-rating": 0.9046459023794619,
+      "SLIM": 1.0045389455873526,
+      "UBCF": 0.9983557445284519,
+      "UBCF-rating": 0.9319116895166472,
+      "UserMean": 1.0061912944956752
+    }
+  },
+  "by_user_group": {
+    "heavy": {
+      "BiasBaseline": 0.9358620359713469,
+      "GlobalMean": 1.1257683954920734,
+      "GraphRec": 1.0587366276128596,
+      "IBCF": 0.9305665221163916,
+      "IBCF-rating": 0.9110908304781885,
+      "ItemMean": 1.0191530275773233,
+      "Popularity": 1.0191530275773233,
+      "PopularityPositive": 1.0191530275773233,
+      "Random": 1.1257683954920734,
+      "RegressionCF": 0.9323241877681672,
+      "RegressionCF-rating": 0.9071873364047748,
+      "SLIM": 1.0119078572758988,
+      "UBCF": 1.0097091772061757,
+      "UBCF-rating": 0.931293091126847,
+      "UserMean": 1.0407915255885534
+    },
+    "medium": {
+      "BiasBaseline": 0.9510819217420875,
+      "GlobalMean": 1.1023749772610865,
+      "GraphRec": 1.0696462217956035,
+      "IBCF": 0.9472429361336921,
+      "IBCF-rating": 0.9425997065865648,
+      "ItemMean": 1.0198922564760866,
+      "Popularity": 1.0198922564760866,
+      "PopularityPositive": 1.0198922564760866,
+      "Random": 1.1023749772610865,
+      "RegressionCF": 0.9490175914622441,
+      "RegressionCF-rating": 0.9329891351337519,
+      "SLIM": 1.0618502568036994,
+      "UBCF": 1.012820818555922,
+      "UBCF-rating": 0.9654999045863522,
+      "UserMean": 1.035047492908468
+    },
+    "sparse": {
+      "BiasBaseline": 0.9876190687407553,
+      "GlobalMean": 1.1216297193765898,
+      "GraphRec": 1.1834706206257712,
+      "IBCF": 0.997650501107083,
+      "IBCF-rating": 1.027667854973248,
+      "ItemMean": 1.0626076641279218,
+      "Popularity": 1.0626076641279218,
+      "PopularityPositive": 1.0626076641279218,
+      "Random": 1.1216297193765898,
+      "RegressionCF": 0.9862638538231046,
+      "RegressionCF-rating": 0.976936011828559,
+      "SLIM": 1.1236566399799097,
+      "UBCF": 1.0624647089005312,
+      "UBCF-rating": 1.0193833573258106,
+      "UserMean": 1.0594409160115885
+    }
+  },
+  "ranking_errors": [
+    {
+      "model": "Random",
+      "users_evaluated": 928,
+      "users_with_a_hit": 65,
+      "hit_rate": 0.07004310344827586,
+      "mean_first_hit_rank": 5.461538461538462,
+      "median_first_hit_rank": 6.0
+    },
+    {
+      "model": "GlobalMean",
+      "users_evaluated": 928,
+      "users_with_a_hit": 12,
+      "hit_rate": 0.01293103448275862,
+      "mean_first_hit_rank": 5.166666666666667,
+      "median_first_hit_rank": 4.5
+    },
+    {
+      "model": "UserMean",
+      "users_evaluated": 928,
+      "users_with_a_hit": 12,
+      "hit_rate": 0.01293103448275862,
+      "mean_first_hit_rank": 5.166666666666667,
+      "median_first_hit_rank": 4.5
+    },
+    {
+      "model": "ItemMean",
+      "users_evaluated": 928,
+      "users_with_a_hit": 3,
+      "hit_rate": 0.003232758620689655,
+      "mean_first_hit_rank": 6.666666666666667,
+      "median_first_hit_rank": 6.0
+    },
+    {
+      "model": "BiasBaseline",
+      "users_evaluated": 928,
+      "users_with_a_hit": 363,
+      "hit_rate": 0.3911637931034483,
+      "mean_first_hit_rank": 4.7162534435261705,
+      "median_first_hit_rank": 5.0
+    },
+    {
+      "model": "Popularity",
+      "users_evaluated": 928,
+      "users_with_a_hit": 575,
+      "hit_rate": 0.6196120689655172,
+      "mean_first_hit_rank": 3.7182608695652175,
+      "median_first_hit_rank": 3.0
+    },
+    {
+      "model": "PopularityPositive",
+      "users_evaluated": 928,
+      "users_with_a_hit": 555,
+      "hit_rate": 0.5980603448275862,
+      "mean_first_hit_rank": 3.466666666666667,
+      "median_first_hit_rank": 2.0
+    },
+    {
+      "model": "UBCF",
+      "users_evaluated": 928,
+      "users_with_a_hit": 728,
+      "hit_rate": 0.7844827586206896,
+      "mean_first_hit_rank": 3.0576923076923075,
+      "median_first_hit_rank": 2.0
+    },
+    {
+      "model": "UBCF-rating",
+      "users_evaluated": 928,
+      "users_with_a_hit": 2,
+      "hit_rate": 0.0021551724137931034,
+      "mean_first_hit_rank": 6.5,
+      "median_first_hit_rank": 6.5
+    },
+    {
+      "model": "IBCF",
+      "users_evaluated": 928,
+      "users_with_a_hit": 722,
+      "hit_rate": 0.7780172413793104,
+      "mean_first_hit_rank": 3.0041551246537397,
+      "median_first_hit_rank": 2.0
+    },
+    {
+      "model": "IBCF-rating",
+      "users_evaluated": 928,
+      "users_with_a_hit": 21,
+      "hit_rate": 0.022629310344827586,
+      "mean_first_hit_rank": 5.619047619047619,
+      "median_first_hit_rank": 5.0
+    },
+    {
+      "model": "RegressionCF",
+      "users_evaluated": 928,
+      "users_with_a_hit": 662,
+      "hit_rate": 0.7133620689655172,
+      "mean_first_hit_rank": 3.0574018126888216,
+      "median_first_hit_rank": 2.0
+    },
+    {
+      "model": "RegressionCF-rating",
+      "users_evaluated": 928,
+      "users_with_a_hit": 418,
+      "hit_rate": 0.4504310344827586,
+      "mean_first_hit_rank": 3.576555023923445,
+      "median_first_hit_rank": 2.0
+    },
+    {
+      "model": "SLIM",
+      "users_evaluated": 928,
+      "users_with_a_hit": 758,
+      "hit_rate": 0.8168103448275862,
+      "mean_first_hit_rank": 2.7691292875989446,
+      "median_first_hit_rank": 2.0
+    },
+    {
+      "model": "GraphRec",
+      "users_evaluated": 928,
+      "users_with_a_hit": 721,
+      "hit_rate": 0.7769396551724138,
+      "mean_first_hit_rank": 2.9819694868238558,
+      "median_first_hit_rank": 2.0
+    }
+  ],
+  "hardest_items": [
+    {
+      "i": 9,
+      "n": 17,
+      "rmse": 1.4310232007534998,
+      "title": "Richard III (1995)",
+      "train_popularity": 68,
+      "group": "medium",
+      "model": "IBCF",
+      "rating_variance": 1.0280898876404494,
+      "extreme_share": 0.39325842696629215,
+      "n_ratings_total": 89
+    },
+    {
+      "i": 501,
+      "n": 13,
+      "rmse": 1.4192824815155272,
+      "title": "Bananas (1971)",
+      "train_popularity": 42,
+      "group": "long_tail",
+      "model": "IBCF",
+      "rating_variance": 1.0701754385964912,
+      "extreme_share": 0.3508771929824561,
+      "n_ratings_total": 57
+    },
+    {
+      "i": 570,
+      "n": 11,
+      "rmse": 1.4125981763373157,
+      "title": "Another Stakeout (1993)",
+      "train_popularity": 16,
+      "group": "long_tail",
+      "model": "IBCF",
+      "rating_variance": 1.0,
+      "extreme_share": 0.5,
+      "n_ratings_total": 28
+    },
+    {
+      "i": 411,
+      "n": 23,
+      "rmse": 1.4074373135917826,
+      "title": "Very Brady Sequel, A (1996)",
+      "train_popularity": 57,
+      "group": "long_tail",
+      "model": "IBCF",
+      "rating_variance": 1.2856474988312296,
+      "extreme_share": 0.6236559139784946,
+      "n_ratings_total": 93
+    },
+    {
+      "i": 211,
+      "n": 21,
+      "rmse": 1.3971796933390956,
+      "title": "Unbearable Lightness of Being, The (1988)",
+      "train_popularity": 65,
+      "group": "long_tail",
+      "model": "IBCF",
+      "rating_variance": 1.5475394171046353,
+      "extreme_share": 0.44565217391304346,
+      "n_ratings_total": 92
+    },
+    {
+      "i": 339,
+      "n": 33,
+      "rmse": 1.3470512604941796,
+      "title": "Boogie Nights (1997)",
+      "train_popularity": 140,
+      "group": "medium",
+      "model": "IBCF",
+      "rating_variance": 1.3819655521783183,
+      "extreme_share": 0.41798941798941797,
+      "n_ratings_total": 189
+    },
+    {
+      "i": 716,
+      "n": 13,
+      "rmse": 1.345694607582331,
+      "title": "Juror, The (1996)",
+      "train_popularity": 60,
+      "group": "long_tail",
+      "model": "IBCF",
+      "rating_variance": 1.3118036735922909,
+      "extreme_share": 0.36585365853658536,
+      "n_ratings_total": 82
+    },
+    {
+      "i": 875,
+      "n": 10,
+      "rmse": 1.3322160994900836,
+      "title": "Money Talks (1997)",
+      "train_popularity": 30,
+      "group": "long_tail",
+      "model": "IBCF",
+      "rating_variance": 0.9093432007400554,
+      "extreme_share": 0.46808510638297873,
+      "n_ratings_total": 47
+    },
+    {
+      "i": 546,
+      "n": 10,
+      "rmse": 1.3311501881054655,
+      "title": "Young Poisoner's Handbook, The (1995)",
+      "train_popularity": 29,
+      "group": "long_tail",
+      "model": "IBCF",
+      "rating_variance": 1.530487804878049,
+      "extreme_share": 0.3902439024390244,
+      "n_ratings_total": 41
+    },
+    {
+      "i": 218,
+      "n": 17,
+      "rmse": 1.327888902386312,
+      "title": "Nightmare on Elm Street, A (1984)",
+      "train_popularity": 80,
+      "group": "medium",
+      "model": "IBCF",
+      "rating_variance": 1.724979524979525,
+      "extreme_share": 0.5135135135135135,
+      "n_ratings_total": 111
+    },
+    {
+      "i": 353,
+      "n": 12,
+      "rmse": 1.318175845785419,
+      "title": "Wedding Singer, The (1998)",
+      "train_popularity": 55,
+      "group": "long_tail",
+      "model": "IBCF",
+      "rating_variance": 0.9575508607198746,
+      "extreme_share": 0.2916666666666667,
+      "n_ratings_total": 72
+    },
+    {
+      "i": 91,
+      "n": 16,
+      "rmse": 1.30192171168093,
+      "title": "True Romance (1993)",
+      "train_popularity": 80,
+      "group": "medium",
+      "model": "IBCF",
+      "rating_variance": 0.9768483943241221,
+      "extreme_share": 0.25,
+      "n_ratings_total": 104
+    },
+    {
+      "i": 771,
+      "n": 11,
+      "rmse": 1.2969147389396163,
+      "title": "Kids (1995)",
+      "train_popularity": 31,
+      "group": "long_tail",
+      "model": "IBCF",
+      "rating_variance": 1.558673469387755,
+      "extreme_share": 0.32653061224489793,
+      "n_ratings_total": 49
+    },
+    {
+      "i": 275,
+      "n": 48,
+      "rmse": 1.292201221815172,
+      "title": "Leaving Las Vegas (1995)",
+      "train_popularity": 214,
+      "group": "head",
+      "model": "IBCF",
+      "rating_variance": 1.3697602422434645,
+      "extreme_share": 0.4429530201342282,
+      "n_ratings_total": 298
+    },
+    {
+      "i": 880,
+      "n": 12,
+      "rmse": 1.2820626319801895,
+      "title": "Money Talks (1997)",
+      "train_popularity": 28,
+      "group": "long_tail",
+      "model": "IBCF",
+      "rating_variance": 1.6545454545454545,
+      "extreme_share": 0.5333333333333333,
+      "n_ratings_total": 45
+    },
+    {
+      "i": 1024,
+      "n": 11,
+      "rmse": 1.2784030077514186,
+      "title": "Fire Down Below (1997)",
+      "train_popularity": 30,
+      "group": "long_tail",
+      "model": "IBCF",
+      "rating_variance": 1.6929175475687102,
+      "extreme_share": 0.5909090909090909,
+      "n_ratings_total": 44
+    },
+    {
+      "i": 52,
+      "n": 28,
+      "rmse": 1.2744564592523202,
+      "title": "Natural Born Killers (1994)",
+      "train_popularity": 90,
+      "group": "medium",
+      "model": "IBCF",
+      "rating_variance": 1.7615649606299202,
+      "extreme_share": 0.4921875,
+      "n_ratings_total": 128
+    },
+    {
+      "i": 346,
+      "n": 21,
+      "rmse": 1.2738636150593554,
+      "title": "Wag the Dog (1997)",
+      "train_popularity": 100,
+      "group": "medium",
+      "model": "IBCF",
+      "rating_variance": 1.1487762988407038,
+      "extreme_share": 0.31386861313868614,
+      "n_ratings_total": 137
+    },
+    {
+      "i": 100,
+      "n": 12,
+      "rmse": 1.2736276979068912,
+      "title": "Heavy Metal (1981)",
+      "train_popularity": 55,
+      "group": "long_tail",
+      "model": "IBCF",
+      "rating_variance": 1.417427701674277,
+      "extreme_share": 0.4657534246575342,
+      "n_ratings_total": 73
+    },
+    {
+      "i": 16,
+      "n": 21,
+      "rmse": 1.2730839028609302,
+      "title": "From Dusk Till Dawn (1996)",
+      "train_popularity": 60,
+      "group": "long_tail",
+      "model": "IBCF",
+      "rating_variance": 1.3811514572384134,
+      "extreme_share": 0.41304347826086957,
+      "n_ratings_total": 92
+    }
+  ],
+  "hard_item_polarisation": {
+    "n_hard_items": 20,
+    "min_test_ratings": 10,
+    "hard_mean_rating_variance": 1.3354624192856872,
+    "catalog_mean_rating_variance_comparable_support": 1.0024545392428141,
+    "hard_mean_extreme_share": 0.4294687523023556,
+    "catalog_mean_extreme_share_comparable_support": 0.36962515560333714,
+    "comparable_support_threshold": 50,
+    "n_comparable_items": 603,
+    "hard_items_more_dispersed": true
+  }
+}

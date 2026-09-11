@@ -1,0 +1,26 @@
+item,n_models,coverage,best_rank,divisiveness,rank_UBCF,rank_IBCF,rank_RegressionCF,rank_SLIM,rank_GraphRec,title,train_popularity,group,held_out_rating
+78,2,0.4,1,0.6,,1.0,,,5.0,"Fugitive, The (1993)",256,head,
+184,2,0.4,1,0.6,,,4.0,1.0,,Psycho (1960),166,head,5.0
+134,1,0.2,2,0.504743802857166,,,2.0,,,2001: A Space Odyssey (1968),186,head,
+63,2,0.4,2,0.3785578521428745,2.0,,,,8.0,"Shawshank Redemption, The (1994)",193,head,
+181,1,0.2,4,0.3445412464587145,,,,4.0,,GoodFellas (1990),174,head,
+193,1,0.2,5,0.30948224578763334,,,,5.0,,"Sting, The (1973)",166,head,4.0
+317,2,0.4,3,0.3,3.0,,,,3.0,Schindler's List (1993),227,head,
+179,2,0.4,3,0.3,,,3.0,8.0,,Apocalypse Now (1979),143,head,
+152,1,0.2,6,0.28496574968641775,,,6.0,,,"Fish Called Wanda, A (1988)",172,head,4.0
+68,1,0.2,7,0.26666666666666666,,,,7.0,,Forrest Gump (1994),218,head,
+150,1,0.2,8,0.252371901428583,,,8.0,,,Willy Wonka and the Chocolate Factory (1971),242,head,
+257,1,0.2,9,0.24082399653118497,,,,,9.0,Contact (1997),368,head,
+186,1,0.2,9,0.24082399653118497,,,,9.0,,"Godfather: Part II, The (1974)",145,head,
+215,1,0.2,10,0.2312518610543103,,10.0,,,,When Harry Met Sally... (1989),217,head,4.0
+12,1,0.2,10,0.2312518610543103,,,10.0,,,Mighty Aphrodite (1995),133,medium,
+209,2,0.4,6,0.2137243122648133,,6.0,7.0,,,Indiana Jones and the Last Crusade (1989),232,head,4.0
+6,2,0.4,7,0.19999999999999998,,,,10.0,7.0,Twelve Monkeys (1995),286,head,4.0
+171,4,0.8,1,0.19999999999999996,6.0,4.0,1.0,,4.0,"Empire Strikes Back, The (1980)",254,head,5.0
+97,4,0.8,1,0.19999999999999996,1.0,2.0,,3.0,1.0,"Silence of the Lambs, The (1991)",275,head,
+88,2,0.4,8,0.18927892607143726,8.0,9.0,,,,Blade Runner (1982),201,head,3.0
+172,3,0.6,4,0.17227062322935724,4.0,5.0,,,6.0,"Princess Bride, The (1987)",247,head,4.0
+182,3,0.6,5,0.15474112289381667,10.0,8.0,5.0,,,Alien (1979),206,head,5.0
+95,3,0.6,6,0.14248287484320887,9.0,,9.0,6.0,,Terminator 2: Judgment Day (1991),202,head,5.0
+167,3,0.6,7,0.13333333333333333,7.0,7.0,,,10.0,Monty Python and the Holy Grail (1974),218,head,5.0
+55,4,0.8,2,0.12618595071429148,5.0,3.0,,2.0,2.0,Pulp Fiction (1994),287,head,5.0

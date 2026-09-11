@@ -1,0 +1,28 @@
+{
+  "selection": {
+    "ranking_selected": {
+      "family": "ibcf",
+      "k": 120,
+      "similarity": "cosine",
+      "mean_center": true,
+      "center_by": "item",
+      "min_support": 3,
+      "beta": 25.0,
+      "rank_mode": "affinity"
+    },
+    "rating_selected": {
+      "family": "ibcf",
+      "k": 20,
+      "similarity": "adjusted_cosine",
+      "mean_center": true,
+      "center_by": "item",
+      "min_support": 3,
+      "beta": 25.0,
+      "rank_mode": "rating"
+    },
+    "val_ndcg_at_selection": 0.1714689070854015,
+    "val_rmse_at_selection": 0.9210215330960759,
+    "selection_split": "validation"
+  },
+  "n_configs": 162
+}
